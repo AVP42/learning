@@ -39,7 +39,7 @@ public class BitMap {
 
 
     public static void mine_implementation(){
-
+        
     }
 
 
