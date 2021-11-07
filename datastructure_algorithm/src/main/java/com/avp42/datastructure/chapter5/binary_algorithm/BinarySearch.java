@@ -74,8 +74,13 @@ public class BinarySearch {
     }
 
 
-    /** 所以对于000111类型找第一个1ra，mid 靠左，使用哨兵， 判断mid元素，结果为l处，当l==nums.length说明不存在；不使用哨兵，判断mid元素, 则需要额外判定l==r时的元素*/
-    /** 所以对于111000类型找最后一个1，mid 靠右，使用哨兵，判断mid - 1元素，结果为l - 1处, 当l==-1时，说明不存在； 不使用哨兵，判断mid元素, 则需要额外判定l==r时的元素*/
+    /** 所以对于000111类型找第一个1，mid 靠左，使用哨兵， 判断mid元素，结果为l处，当l==nums.length说明不存在；不使用哨兵，判断mid元素, 则需要额外判定l==r时的元素
+     * 所以对于111000类型找最后一个1，mid 靠右，使用哨兵，判断mid - 1元素，结果为l - 1处, 当l==-1时，说明不存在； 不使用哨兵，判断mid元素, 则需要额外判定l==r时的元素
+     *
+     * 也不需要实际死记硬背，11110000可以转成00000111(可以用上面的第一种方法), 注意判断是反过来的，找到第一个1之后，ans - 1的位置就是第一个0的位置。
+     *
+     * 还可以使用万能变种，不使用哨兵，使用变量存储结果，在为1的时候存储，判断mid元素，l=mid+1, r=mid-1。如果不存在，则为-1.
+     */
 
     // 00001111类型  mid靠左
     //            使用哨兵    不使用哨兵(需要判断边界)
@@ -148,6 +153,44 @@ public class BinarySearch {
         return l;
     }
 
+    // 00001111   无哨兵节点(判断mid)
+    // 11111返回        4
+    // 00000返回        -1
+    // 10000返回        1
+    public int binary_search_0011_common(int[] nums, int l, int r){
+        int mid;
+        int ans = -1;
+        while(l <= r){
+            mid = (r + l ) >> 1;
+            if(nums[mid] == 1){
+                ans = mid;
+                r = mid - 1;
+            }else{
+                l = mid +  1;
+            }
+        }
+        return ans;
+    }
+
+    // 111000类型   无哨兵节点(判断mid)
+    // 11111返回        4
+    // 00000返回        -1
+    // 10000返回        1
+    public int binary_search_1100_common(int[] nums, int l, int r){
+        int mid;
+        int ans = -1;
+        while(l <= r){
+            mid = (r + l ) >> 1;
+            if(nums[mid] == 1){
+                ans = mid;
+                l = mid + 1;
+            }else{
+                r = mid - 1;
+            }
+        }
+        return ans;
+    }
+
 
 
     public static void main(String[] args) {
@@ -198,6 +241,22 @@ public class BinarySearch {
         System.out.println(new BinarySearch().binary_search_1100_2(nums7, 0, nums7.length));
         System.out.println(new BinarySearch().binary_search_1100_2(nums8, 0, nums8.length));
         System.out.println(new BinarySearch().binary_search_1100_2(nums9, 0, nums9.length));
+
+        System.out.println("=====0011型， 通用类型，增加结果变量，判断mid元素，==========");
+        int[] nums77 = new int[]{1,1,1,1,1}; // 0
+        int[] nums88 = new int[]{0,0,0,0,0}; // -1
+        int[] nums99 = new int[]{0,0,0,0,1}; // 4
+        System.out.println(new BinarySearch().binary_search_0011_common(nums77, 0, nums77.length - 1));
+        System.out.println(new BinarySearch().binary_search_0011_common(nums88, 0, nums88.length - 1));
+        System.out.println(new BinarySearch().binary_search_0011_common(nums99, 0, nums99.length - 1));
+
+        System.out.println("=====1100型， 通用类型，增加结果变量，判断mid元素，==========");
+        int[] nums777 = new int[]{1,1,1,1,1}; // 4
+        int[] nums888 = new int[]{0,0,0,0,0}; // -1
+        int[] nums999 = new int[]{1,0,0,0,0}; // 0
+        System.out.println(new BinarySearch().binary_search_1100_common(nums777, 0, nums777.length - 1));
+        System.out.println(new BinarySearch().binary_search_1100_common(nums888, 0, nums888.length - 1));
+        System.out.println(new BinarySearch().binary_search_1100_common(nums999, 0, nums999.length - 1));
 
     }
 
