@@ -169,6 +169,17 @@
 
    socket，套接字，由IP地址和端口号组成，是运输层进行通信的端点。
 
+   socket 其实就是一个五元组，包括：源IP, 源端口, 目的IP, 目的端口, 类型(TCP or UDP) . 这个五元组，即标识了一条可用的连接。
+
+   ```shell
+   $ ss -antp | grep 7777
+   LISTEN   0   10 0.0.0.0:7777        0.0.0.0:*     users:(("ncat",pid=19208,fd=3))
+   ESTAB    0   0  127.0.0.1:7777   192.168.3.187:8888  users:(("ncat",pid=19208,fd=5))
+   ESTAB    0   0  127.0.0.1:7777      127.0.0.1:8888 users:(("ncat",pid=19208,fd=4))
+   ESTAB    0   0  192.168.3.187:8888  127.0.0.1:7777 users:(("a.out",pid=19340,fd=4))
+   ESTAB    0   0  127.0.0.1:8888      127.0.0.1:7777 users:(("a.out",pid=19340,fd=3))
+   ```
+
    
 
 4. 为什么TCP是可靠的，如何实现
@@ -1034,7 +1045,7 @@
       >
       > ACK=1,seq=v,ack=u+1
 
-    * B发送FIN+ACK报文给A，进入LAST-CHECK状态
+    * B发送FIN+ACK报文给A，进入LAST-ACK状态
 
       > 待应用进程数据发送完后，发出FIN报文，后续不再发送数据，可以释放连接
       >
@@ -1082,11 +1093,11 @@
       >
       > 服务器在1MSL没有收到ACK，就会重发FIN+ACK；FIN+ACK最晚到达时间是2MSL。
       >
-      > 如果A直接进入CLOSED状态，那么B就可能收不到ACK，重传报文得到A的RST报文，误认为是有异常发生，其。
+      > 如果没有等待，A直接进入CLOSED状态，那么B就可能收不到ACK，重传报文得到A的RST报文，==**误认为是有异常发生**==。
 
       为什么建立连接不需要呢，因为关闭资源更为重要，可以避免浪费，而建立连接的时候，就算ACK丢失了，对服务器的影响并不大。
 
-      实际使用中可以通过设置SO_REUSEADDR来重用地址，而不必等待2MSL才释放端口。
+      实际使用中可以通过设置SO_REUSEADDR来重用地址，而不必等待2MSL才释放端口，适用于解决在服务器重启的时候报Address already in use异常。
 
       > MSL & RTT & TTL
       >
@@ -1102,10 +1113,79 @@
       >
       > TTL - 针对ip数据报而言，指数据报可以经过的最大路由数。
 
-    * 防止已失效的报文段出现在本连接中，比如连接请求报文。
+    * 防止已失效的报文段出现在本连接中。
 
-      > MSL是报文段在互联网中的最大生命，设置2MSL就可以保证经过这个时间后，这条连接持续时间内产生过的报文都不存在与互联网中，使得下一个新的连接中不会出现旧连接的连接请求报文
+      > MSL是报文段在互联网中的最大生命，设置2MSL就可以保证经过这个时间后，这条连接持续时间内产生过的报文都不存在与互联网中。
+      >
+      > 如果没有等待，A直接进入CLOSED, 可能导致前一个连接的数据被新的连接接收，如果序号刚好对上了，就会解析到错误的数据，如果序号不对就会RST掉。
+      >
+      > 情况1：A接收到B重传的FIN+ACK，返回RST，造成**异常出现**
+      >
+      > 情况2：B对A以前的SYN回复SYN+ACK，如果A已经开启性的连接，会有**异常出现**。
+      >
+      > ![image-20211204230615810](images/image-20211204230615810.png)
 
+  * TIME_WATI可能导致什么问题，如何解决
+
+    [参考1](https://www.cnblogs.com/kevingrace/p/9988354.html)
+
+    > 1万条TIME_WAIT的连接，也就多消耗1M左右的内存.
+
+    * 【场景1】高并发，短连接场景，当服务器请求完后主动关闭连接，服务器可能有大量的TIME_WAIT状态的连接，服务器维护每一个连接都需要一个socket，一个socket对应了一个文件描述符，而文件描述符是有限的，可能导致连接数不够
+
+      解决：
+    
+      *  修改TIME_WAIT的时间，通过tcp_fin_timeout参数，一般是60s。也就是说现在很多实现的MSL都是30秒了。
+    
+        
+    
+        ```shell
+        # 统计各种状态TCP连接数量
+        $ netstat -n | awk '/^tcp/ {++state[$NF]} END {for(key in state) print key,"\t", state[key]}'
+        LAST_ACK 1
+        SYN-RECV 14
+      ESTABLISHED 79
+        FIN_WAIT1 28
+        FIN_WAIT2 3
+        CLOSING
+        TIME_WAIT 1669
+        
+        # 修改TIME_WAIT timer 时间
+        $ cat /proc/sys/net/ipv4/tcp_fin_timeout
+        60
+        
+        # 下面的一般不会修改，可了解
+        # tcp_tw_timestamps 用于开启TCP首部时间戳选项，可以计算出RTT
+        # tcp_tw_reuse 当主动关闭的一方，再次连接对方，就可以复用socket
+        # tcp_tw_recycle  会回收处于timewait状态下的socket
+        $ vim /etc/sysctl.conf
+        net.ipv4.tcp_tw_reuse = 1
+        net.ipv4.tcp_tw_recycle = 1
+        net.ipv4.tcp_tw_timestamps = 1
+        ```
+    
+      * 设置[SO_REUSEADDR选项](https://cloud.tencent.com/developer/article/1484223)，使得服务器处于TIME_WAIT状态的socket可以立即被使用，避免重新启动时因为端口还在占用而无法成功。
+    
+        > 这个也不是没有代价的，带来的[风险](https://stackoverflow.com/questions/3229860/what-is-the-meaning-of-so-reuseaddr-setsockopt-option-linux)是新启动的socket接收到旧数据，或者新的数据被旧的socket收到了。
+    
+    * 【场景2】如果非高并发场景，单个连接的操作频繁，可以使用长连接，避免tcp的断开和连接
+    
+  * CLOSE_WAIT状态过多，如何解决
+
+    [参考1](https://www.cnblogs.com/kevingrace/p/9988354.html)
+
+    * CLOSE_WAIT可能是网络拥塞，导致数据发送缓慢，可以先排查网络是否发生了拥塞
+
+    * CLOSE_WAIT状态可能是应用程序迟迟没有关闭连接导致，可以排查应用代码, 比如是没有调用close或者响应速度太慢。
+
+    * 除此之外，可以通过调整tcp的参数，缩小CLOSE_WAIT的时间限制
+    
+      比如调整tcp_keepalive_time，默认值时2个小时，可以调整为1200或者1800秒。
+    
+      
+    
+      
+    
   * 保活计时器
 
     为了防止客户端主机崩溃，无法释放连接，造成资源浪费。
@@ -1216,6 +1296,8 @@
     连接→数据传输→保持连接(心跳)→数据传输→保持连接(心跳)→……→关闭连接；
 
     心跳包是自定义的结构体，用于让对方知道自己的状态，以确认连接有效。
+
+  * socket timeout 
 
 * 连接池的具体实现
   
