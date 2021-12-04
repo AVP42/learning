@@ -18,6 +18,8 @@ public class Main {
 //        System.out.println(-1/2);
 //
 //        int[][] ints = new int[9][8];
+        int i = 1_000_000_01_7;
+        double v = 1e9 + 7;
 
         System.out.println(2 & -2);
         System.out.println(3 & -3);

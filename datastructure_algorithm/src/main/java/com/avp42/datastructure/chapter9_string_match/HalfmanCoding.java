@@ -1,4 +1,4 @@
-package com.avp42.datastructure.chapter10_halfman_coding;
+package com.avp42.datastructure.chapter9_string_match;
 
 
 import java.util.Comparator;
