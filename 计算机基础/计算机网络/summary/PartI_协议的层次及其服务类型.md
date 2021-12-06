@@ -3,6 +3,9 @@
 ## 3种模型
 
 * 定义：
+  
+  ![image-20211206222610379](images/image-20211206222610379.png)
+  
   * OSI模型，Open System Interconnection Model,   开发式系统互连参考模型。
     是由国际标准化组织ISO提出的一种标准，没有考虑到具体的时长需求。
   * TCP/IP模型， 面向市场应用的模型，4层模型
