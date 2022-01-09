@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="757678e4-2993-4c1e-aa93-602e035d6541" name="Default Changelist" comment="" />
+    <list default="true" id="b318261f-47a7-4fcc-897b-98e5739a4895" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/chain_of_responsibility/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/chain_of_responsibility/structure/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/chain_of_responsibility/structure/ConcreteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/chain_of_responsibility/structure/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/blackbox/Caretaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/blackbox/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/blackbox/MementoIF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/blackbox/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/checkpoint/Caretaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/checkpoint/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/checkpoint/MementoIF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/checkpoint/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/enhanced_caretaker/Caretaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/enhanced_caretaker/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/enhanced_caretaker/MementoIF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/enhanced_caretaker/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/whitebox/Caretaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/whitebox/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/whitebox/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/whitebox/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support/structure/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support/structure/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support/usage/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support/usage/Watched.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support/usage/Watcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/structure/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/structure/ConcreteObserver1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/structure/ConcreteObserver2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/structure/ConcreteSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/structure/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/structure/Subject.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +54,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -38,20 +76,20 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1vfpNOaNrudTAMAbwCdeQqP0THA" />
+  <component name="ProjectId" id="23OhL0L03iy5PsuWPus6wwbzhZf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8-241" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/计算机基础/计算机网络/summary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,32 +99,31 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\learning\0_github\计算机基础\计算机网络\summary" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="info.wufc.learning.design_pattern.memento.structure.checkpoint" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.avp42.basic.bit" />
-      <recent name="com.avp42.datastructure.chapter9_string_match" />
+      <recent name="info.wufc.learning.design_pattern.observer.structure" />
+      <recent name="info.wufc.learning.design_pattern.mediator.deformation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\learning\0_github\计算机基础\计算机网络\summary" />
-      <recent name="D:\learning\0_github\datastructure_algorithm" />
-      <recent name="D:\learning\0_github\datastructure_algorithm\src\test" />
-      <recent name="D:\learning\0_github\datastructure_algorithm\src\main" />
+      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\observer\java_support\" />
+      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\mediator\deformation" />
+      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountIntegers">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure.chapter5.binary_algorithm.BinarySearch" />
-      <module name="datastructure_algorithm" />
+  <component name="RunManager" selected="Application.Client (2)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.enhanced_caretaker.Client" />
+      <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure.chapter5.binary_algorithm.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.enhanced_caretaker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BitOper2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.basic.bit.BitOper2" />
-      <module name="datastructure_algorithm" />
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.checkpoint.Client" />
+      <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.basic.bit.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.checkpoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure.chapter8_dynamic_program.digit.CountIntegers" />
-      <module name="datastructure_algorithm" />
+    <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.chain_of_responsibility.structure.Client" />
+      <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure.chapter8_dynamic_program.digit.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.chain_of_responsibility.structure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FenwickTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure.chapter10_other_algorithm.FenwickTree" />
-      <module name="datastructure_algorithm" />
+    <configuration name="Client (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.whitebox.Client" />
+      <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure.chapter10_other_algorithm.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.whitebox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +170,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HalfmanCoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure.chapter9_string_match.HalfmanCoding" />
-      <module name="datastructure_algorithm" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.blackbox.Client" />
+      <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure.chapter9_string_match.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.blackbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,241 +183,120 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountIntegers" />
-        <item itemvalue="Application.FenwickTree" />
-        <item itemvalue="Application.HalfmanCoding" />
-        <item itemvalue="Application.BitOper2" />
-        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.Client (2)" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Client (5)" />
+        <item itemvalue="Application.Client (4)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="757678e4-2993-4c1e-aa93-602e035d6541" name="Default Changelist" comment="" />
-      <created>1626962958427</created>
+      <changelist id="b318261f-47a7-4fcc-897b-98e5739a4895" name="Default Changelist" comment="" />
+      <created>1641610981442</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1626962958427</updated>
-      <workItem from="1626962960770" duration="2618000" />
-      <workItem from="1634741628170" duration="1585000" />
-      <workItem from="1634820345321" duration="6410000" />
-      <workItem from="1634957124321" duration="1809000" />
-      <workItem from="1635049744103" duration="25966000" />
-      <workItem from="1635167333218" duration="1320000" />
-      <workItem from="1635247506905" duration="5888000" />
-      <workItem from="1635423456242" duration="1812000" />
-      <workItem from="1635560680047" duration="2976000" />
-      <workItem from="1635648863839" duration="1185000" />
-      <workItem from="1635768000616" duration="1209000" />
-      <workItem from="1635860814483" duration="590000" />
-      <workItem from="1635941635468" duration="599000" />
-      <workItem from="1636251407232" duration="10525000" />
-      <workItem from="1636370909989" duration="3107000" />
-      <workItem from="1636461251916" duration="596000" />
-      <workItem from="1636631032401" duration="2044000" />
-      <workItem from="1636721907552" duration="694000" />
-      <workItem from="1636770144768" duration="6152000" />
-      <workItem from="1636854328989" duration="614000" />
-      <workItem from="1636898798445" duration="987000" />
-      <workItem from="1636975748597" duration="3901000" />
-      <workItem from="1637063733221" duration="3025000" />
-      <workItem from="1637149249770" duration="591000" />
-      <workItem from="1637238604240" duration="1268000" />
-      <workItem from="1637376552784" duration="3200000" />
-      <workItem from="1637402795573" duration="2534000" />
-      <workItem from="1637582129423" duration="582000" />
-      <workItem from="1638627229240" duration="1806000" />
+      <updated>1641610981442</updated>
+      <workItem from="1641610983347" duration="412000" />
+      <workItem from="1641616836227" duration="10063000" />
+      <workItem from="1641627356919" duration="989000" />
+      <workItem from="1641628810333" duration="12998000" />
+      <workItem from="1641692791279" duration="36510000" />
     </task>
-    <task id="LOCAL-00001" summary="字典树">
-      <created>1635247846583</created>
+    <task id="LOCAL-00001" summary="设计模式">
+      <created>1641655168257</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1635247846583</updated>
+      <updated>1641655168257</updated>
     </task>
-    <task id="LOCAL-00002" summary="哈夫曼编码">
-      <created>1636286215081</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1636286215081</updated>
-    </task>
-    <task id="LOCAL-00003" summary="计网复习">
-      <created>1638627825219</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1638627825219</updated>
-    </task>
-    <task id="LOCAL-00004" summary="计网复习">
-      <created>1638632857012</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1638632857012</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="字典树" />
-    <MESSAGE value="哈夫曼编码" />
-    <MESSAGE value="计网复习" />
-    <option name="LAST_COMMIT_MESSAGE" value="计网复习" />
+    <MESSAGE value="设计模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="93" key="#Project_Structure" timestamp="1635606582668">
+    <state x="440" y="93" key="#Project_Structure" timestamp="1641611287030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1635606582668" />
-    <state x="657" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1637403107037">
+    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1641611287030" />
+    <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1641730102069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="657" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1637403107037" />
-    <state x="765" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1635069906759">
+    <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641730102069" />
+    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1641730170670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1635069906759" />
-    <state x="567" y="441" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1636770387093">
+    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641730170670" />
+    <state x="806" y="140" key="CommitChangelistDialog2" timestamp="1641655160311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="441" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636770387093" />
-    <state x="715" y="220" key="#xdebugger.evaluate" timestamp="1635072264390">
+    <state x="806" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1641655160311" />
+    <state width="1330" height="275" key="GridCell.Tab.0.bottom" timestamp="1641731509736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="715" y="220" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1635072264390" />
-    <state x="514" y="84" key="CommitChangelistDialog2" timestamp="1638632851815">
+    <state width="1330" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641731509736" />
+    <state width="1330" height="275" key="GridCell.Tab.0.center" timestamp="1641731509735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="514" y="84" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1638632851815" />
-    <state width="424" height="466" key="DebuggerActiveHint" timestamp="1635071737135">
+    <state width="1330" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641731509735" />
+    <state width="1330" height="275" key="GridCell.Tab.0.left" timestamp="1641731509735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="424" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1635071737135" />
-    <state x="100" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1638627634265">
+    <state width="1330" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641731509735" />
+    <state width="1330" height="275" key="GridCell.Tab.0.right" timestamp="1641731509735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638627634265" />
-    <state width="1859" height="277" key="GridCell.Tab.0.bottom" timestamp="1636990594885">
+    <state width="1330" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641731509735" />
+    <state x="461" y="150" key="SettingsEditor" timestamp="1641630871883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636990594885" />
-    <state width="1859" height="277" key="GridCell.Tab.0.center" timestamp="1636990594884">
+    <state x="461" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1641630871883" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1641703300692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636990594884" />
-    <state width="1859" height="277" key="GridCell.Tab.0.left" timestamp="1636990594884">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1641703300692" />
+    <state x="799" y="288" key="Vcs.Push.Dialog.v2" timestamp="1641655171579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636990594884" />
-    <state width="1859" height="277" key="GridCell.Tab.0.right" timestamp="1636990594885">
+    <state x="799" y="288" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641655171579" />
+    <state x="742" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1641730827940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1859" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636990594885" />
-    <state width="1875" height="379" key="GridCell.Tab.1.bottom" timestamp="1636817479705">
+    <state x="742" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641730827940" />
+    <state x="1051" y="227" width="671" height="594" key="find.popup" timestamp="1641654710712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="379" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636817479705" />
-    <state width="1875" height="379" key="GridCell.Tab.1.center" timestamp="1636817479704">
+    <state x="1051" y="227" width="671" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641654710712" />
+    <state x="334" y="179" key="new project wizard" timestamp="1641611015338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="379" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636817479704" />
-    <state width="1875" height="379" key="GridCell.Tab.1.left" timestamp="1636817479704">
+    <state x="334" y="179" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1641611015338" />
+    <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1641702133605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="379" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636817479704" />
-    <state width="1875" height="379" key="GridCell.Tab.1.right" timestamp="1636817479704">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1875" height="379" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636817479704" />
-    <state x="496" y="250" key="SettingsEditor" timestamp="1636772045464">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="496" y="250" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1636772045464" />
-    <state x="552" y="251" key="Vcs.Push.Dialog.v2" timestamp="1638632867474">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638632867474" />
-    <state x="100" y="100" width="1720" height="840" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1638627634265">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="100" y="100" width="1720" height="840" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638627634265" />
-    <state x="119" y="128" width="1720" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1638627634265">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="119" y="128" width="1720" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638627634265" />
-    <state x="502" y="247" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1635067663523">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="502" y="247" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1635067663523" />
-    <state x="690" y="278" key="extract.method.dialog" timestamp="1635066805563">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="278" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635066805563" />
-    <state x="662" y="252" width="746" height="536" key="find.popup" timestamp="1636899170681">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="662" y="252" width="746" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636899170681" />
-    <state x="386" y="336" key="new project wizard" timestamp="1634741912688">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="386" y="336" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1634741912688" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1637074244661">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637074244661" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter9_string_match/SingleArrayTrie.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter9_string_match/SingleArrayTrie.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter9_string_match/DoubleArrayTrie.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter9_string_match/DoubleArrayTrie.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter9_string_match/DoubleArrayTrie.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter9_string_match/HalfmanCoding.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641702133605" />
   </component>
 </project>
