@@ -5,19 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318261f-47a7-4fcc-897b-98e5739a4895" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/ConcreteCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/ConcreteMacroCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/MicroCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/structure/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/structure/register/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/structure/register/PrototypeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/structure/simple/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/structure/simple/ConcretePrototype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/structure/simple/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/2.summary/design_pattern.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/facade/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/composite/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/composite/ConcreteCompositeFlyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/composite/FlyWeightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/single/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/single/ConcreteFlyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/single/Flyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/structure/single/FlyweightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/And.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Not.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Or.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/demonstrate/Variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/interpreter/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/HungrySingletonByEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByInnerEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonBySynchronized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/HungrySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/HungrySingletonByEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/LazySingletonByDoubleCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/LazySingletonByInnerEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/structure/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/structure/ConcreteState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/structure/ConcreteState2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/structure/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/structure/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/problem/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/problem/ObjectStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/ConcreteNodeA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/ConcreteNodeB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/ConcreteVisitor1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/ConcreteVisitor2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/ObjectStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/structure/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/keyword/_volatile/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/RedefineAbstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/RedefineAbstraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/builder/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/builder/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/proxy/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/proxy/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/EnumSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/HungrySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/HungrySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByDoubleCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByDoubleCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByInnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByInnerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +80,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="package-info" />
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -68,7 +114,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8-241" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/observer/java_support" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/break" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,15 +126,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\singleton\break" />
       <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\observer\java_support\" />
       <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\mediator\deformation" />
       <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="info.wufc.learning.design_pattern.singleton" />
+      <recent name="info.wufc.learning.design_pattern.singleton.destruct" />
+      <recent name="info.wufc.learning.design_pattern.interpreter.demonstrate" />
       <recent name="info.wufc.learning.design_pattern.observer.structure" />
       <recent name="info.wufc.learning.design_pattern.mediator.deformation" />
     </key>
@@ -97,26 +147,13 @@
       <recent name="info.wufc.learning.design_pattern.memento.structure.checkpoint" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client (3)">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.enhanced_caretaker.Client" />
-      <module name="design_pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.enhanced_caretaker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.checkpoint.Client" />
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.flyweight.structure.single.Client" />
       <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.checkpoint.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.flyweight.structure.single.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +162,11 @@
       </method>
     </configuration>
     <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.prototype.structure.simple.Client" />
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.interpreter.demonstrate.Client" />
       <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="info.wufc.learning.design_pattern.prototype.structure.simple.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.interpreter.demonstrate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +175,11 @@
       </method>
     </configuration>
     <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.prototype.structure.register.Client" />
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.flyweight.structure.composite.Client" />
       <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="info.wufc.learning.design_pattern.prototype.structure.register.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.flyweight.structure.composite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,11 +188,11 @@
       </method>
     </configuration>
     <configuration name="Client (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.memento.structure.whitebox.Client" />
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.singleton.Client" />
       <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="info.wufc.learning.design_pattern.memento.structure.whitebox.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +201,11 @@
       </method>
     </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.command.structure.Client" />
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.design_pattern.singleton.destruct.Client" />
       <module name="design_pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="info.wufc.learning.design_pattern.command.structure.*" />
+          <option name="PATTERN" value="info.wufc.learning.design_pattern.singleton.destruct.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,24 +213,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Client (5)" />
         <item itemvalue="Application.Client (3)" />
         <item itemvalue="Application.Client (4)" />
-        <item itemvalue="Application.Client (3)" />
         <item itemvalue="Application.Client (2)" />
-        <item itemvalue="Application.Client (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +237,17 @@
       <workItem from="1641628810333" duration="12998000" />
       <workItem from="1641692791279" duration="37125000" />
       <workItem from="1641814548387" duration="10330000" />
+      <workItem from="1641904092377" duration="6714000" />
+      <workItem from="1641993993632" duration="3306000" />
+      <workItem from="1642212688594" duration="9862000" />
+      <workItem from="1642226080543" duration="2044000" />
+      <workItem from="1642228289380" duration="1644000" />
+      <workItem from="1642229999423" duration="15485000" />
+      <workItem from="1642298520737" duration="15180000" />
+      <workItem from="1642322531128" duration="4423000" />
+      <workItem from="1642426692739" duration="5534000" />
+      <workItem from="1642508175368" duration="10440000" />
+      <workItem from="1642519516638" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式">
       <created>1641655168257</created>
@@ -234,61 +271,153 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1641611287030" />
-    <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1641823295602">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1642431049020">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641823295602" />
-    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1641818929377">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641906629518" />
+    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1642431049020" />
+    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1642251376644">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641818929377" />
+    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1642251376644" />
+    <state x="845" y="229" key="#xdebugger.evaluate" timestamp="1642317708147">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="845" y="229" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1642317708147" />
     <state x="806" y="140" key="CommitChangelistDialog2" timestamp="1641655160311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="806" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1641655160311" />
-    <state width="1330" height="329" key="GridCell.Tab.0.bottom" timestamp="1641830664732">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="416" height="466" key="DebuggerActiveHint" timestamp="1642317684485">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641830664732" />
-    <state width="1330" height="329" key="GridCell.Tab.0.center" timestamp="1641830664731">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="416" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1642317684485" />
+    <state width="1279" height="156" key="GridCell.Tab.0.bottom" timestamp="1642342466834">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641830664731" />
-    <state width="1330" height="329" key="GridCell.Tab.0.left" timestamp="1641830664731">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1330" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381108" />
+    <state width="1279" height="156" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1642342466834" />
+    <state width="1279" height="156" key="GridCell.Tab.0.center" timestamp="1642342466834">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641830664731" />
-    <state width="1330" height="329" key="GridCell.Tab.0.right" timestamp="1641830664731">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1330" height="329" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381107" />
+    <state width="1279" height="156" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1642342466834" />
+    <state width="1279" height="156" key="GridCell.Tab.0.left" timestamp="1642342466834">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641830664731" />
-    <state x="461" y="150" key="SettingsEditor" timestamp="1641630871883">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1330" height="329" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381107" />
+    <state width="1279" height="156" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1642342466834" />
+    <state width="1279" height="156" key="GridCell.Tab.0.right" timestamp="1642342466834">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1641630871883" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1641703300692">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1330" height="329" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381108" />
+    <state width="1279" height="156" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1642342466834" />
+    <state width="1095" height="249" key="GridCell.Tab.1.bottom" timestamp="1642318644026">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1095" height="249" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1642318644026" />
+    <state width="1095" height="249" key="GridCell.Tab.1.center" timestamp="1642318644025">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1095" height="249" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1642318644025" />
+    <state width="1095" height="249" key="GridCell.Tab.1.left" timestamp="1642318644024">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1095" height="249" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1642318644024" />
+    <state width="1095" height="249" key="GridCell.Tab.1.right" timestamp="1642318644025">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1095" height="249" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1642318644025" />
+    <state x="118" y="122" key="SettingsEditor" timestamp="1642519301889">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1641906532650" />
+    <state x="118" y="122" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1642519301889" />
+    <state width="498" height="464" key="SwitcherDM" timestamp="1642429878931">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1641703300692" />
+    <state width="498" height="464" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1642429878931" />
     <state x="799" y="288" key="Vcs.Push.Dialog.v2" timestamp="1641655171579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="799" y="288" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641655171579" />
-    <state x="742" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1641730827940">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1774" height="580" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1642327767553">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1774" height="580" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1080@0.0.1920.1080" timestamp="1642327767553" />
+    <state x="742" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1642316345601">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="742" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641730827940" />
-    <state x="1051" y="227" width="671" height="594" key="find.popup" timestamp="1641654710712">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="742" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1642316345601" />
+    <state x="566" y="285" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1642315824091">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="566" y="285" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1642315824091" />
+    <state x="1051" y="236" width="671" height="617" key="find.popup" timestamp="1642427658455">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1051" y="227" width="671" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641654710712" />
-    <state x="334" y="179" key="new project wizard" timestamp="1641611015338">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1051" y="236" width="671" height="617" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1642427658455" />
+    <state x="334" y="186" key="new project wizard" timestamp="1642320691418">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="334" y="179" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1641611015338" />
-    <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1641822437831">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="334" y="186" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1642320691418" />
+    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup" timestamp="1642430659406">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641822437831" />
+    <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641906065487" />
+    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1642430659406" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/Client.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/HungrySingletonByEnum.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <condition expression="var1.startsWith(&quot;info.wufc&quot;)" language="JAVA" />
+          <url>jar://E:/bigdata/software/jdk/jre/lib/rt.jar!/sun/misc/Launcher.class</url>
+          <line>174</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/bigdata/software/jdk/src.zip!/java/lang/ClassLoader.java</url>
+          <line>956</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/Client.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/Client.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/Client.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByInnerClass.java</url>
+          <line>16</line>
+          <properties field="instance" class="info.wufc.learning.design_pattern.singleton.LazySingletonByInnerClass.SingletonHolder" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

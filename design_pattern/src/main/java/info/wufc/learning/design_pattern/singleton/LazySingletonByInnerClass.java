@@ -7,13 +7,14 @@ package info.wufc.learning.design_pattern.singleton;
  */
 
 /**
- * 懒加载单例模式---调用时加载SinletonHolder，从而实例化 因为内部类时不会在JVM启动时加载
+ * 懒加载单例模式---调用时加载SinletonHolder，从而实例化
+ * 因为JVM加载外部类时，并不会触发内部类的加载，所以实现延迟
  */
 public class LazySingletonByInnerClass {
     private LazySingletonByInnerClass(){}
 
-    static class SingletonHolder{
-       static LazySingletonByInnerClass instance = new LazySingletonByInnerClass();
+    private static class SingletonHolder{
+       private final static LazySingletonByInnerClass instance = new LazySingletonByInnerClass();
     }
 
     public static LazySingletonByInnerClass getInStance() {
