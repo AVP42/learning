@@ -1,4 +1,4 @@
-package info.wufc.learning.design_pattern.strategy.solution.solution4_策略模式_装饰模式;
+package info.wufc.learning.design_pattern.strategy.solution.solution4_策略模式_合成模式;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ public class Client {
     public static void main(String[] args) {
         Strategy strategy = new ConcreteStrategy();
         Strategy strategy2 = new ConcreteStrategy2();
-        Strategy combined = new Decorator(Arrays.asList(strategy,strategy2));
+        Strategy combined = new Composite(Arrays.asList(strategy,strategy2));
         combined.doStrategy();
     }
 }

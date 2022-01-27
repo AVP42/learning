@@ -7,6 +7,9 @@ package info.wufc.learning.design_pattern.bridge.structure;
  */
 public  class RedefineAbstraction extends Abstraction{
 
+    public RedefineAbstraction(Implementor implementor) {
+        super(implementor);
+    }
 
     /**
      * 某个商业方法在修正抽象化角色上的实现

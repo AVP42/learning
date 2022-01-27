@@ -16,7 +16,8 @@
  *          6.1 缺省适配器与适配器：缺省适配器使用的是类适配器模式，是适配器模式的一个特例；缺省适配器模式的方法实现是“平庸”的，缺省的。
  *
  *      7. 实例：
- *          7.1 在spring的message模块中，listener接口，通常会有一个
+ *          7.1 在spring的message模块中，listener接口，通常会有一个apdator
+ *              AbstractAdaptableMessageListener implements MessageListener
  *
  *
  *
