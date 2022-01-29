@@ -5,34 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318261f-47a7-4fcc-897b-98e5739a4895" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/immutable/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/pipeline/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/file/PathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/IOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/io.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jndi/MXTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jndi/jndi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/resources/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/resources/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/Abstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/Abstraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/RedefineAbstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/bridge/structure/RedefineAbstraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/decorator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/decorator/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/default_adapter/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/default_adapter/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/factory/abstractfactory/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/factory/abstractfactory/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/factory/factorymethod/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/factory/factorymethod/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/flyweight/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/prototype/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/proxy/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/proxy/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/ConcreteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/ConcreteStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/ConcreteStrategy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/ConcreteStrategy2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/Composite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/Strategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_装饰模式/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/strategy/solution/solution4_策略模式_合成模式/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/template/structure/AbstractClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/template/structure/ConcreteClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/chain_of_responsibility/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/chain_of_responsibility/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/command/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/iterator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/iterator/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/mediator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/mediator/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/checkpoint/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/memento/structure/checkpoint/Originator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/state/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/template/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/template/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/visitor/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +35,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,7 +69,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8-241" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/break" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -186,13 +171,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,6 +225,7 @@
       <workItem from="1643110971199" duration="9467000" />
       <workItem from="1643199922897" duration="10448000" />
       <workItem from="1643290096421" duration="4355000" />
+      <workItem from="1643420345228" duration="28719000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式">
       <created>1641655168257</created>
@@ -265,11 +253,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1176" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1643121422047" />
-    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1643209478721">
+    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1643423665837">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641906629518" />
-    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1643209478721" />
+    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1643423665837" />
     <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1642251376644">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -291,6 +279,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="368" y="48" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1642940308646" />
+    <state x="849" y="250" key="FileChooserDialogImpl" timestamp="1643461439599">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="849" y="250" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1643461439599" />
     <state width="1279" height="247" key="GridCell.Tab.0.bottom" timestamp="1643210401271">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -362,21 +354,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1082" y="271" key="extract.method.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1643122795796" />
-    <state x="1051" y="236" width="709" height="617" key="find.popup" timestamp="1642925589948">
+    <state x="1051" y="236" width="709" height="617" key="find.popup" timestamp="1643461197581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1051" y="227" width="671" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641654710712" />
-    <state x="1051" y="236" width="709" height="617" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1642925589948" />
+    <state x="1051" y="236" width="709" height="617" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1643461197581" />
     <state x="334" y="186" key="new project wizard" timestamp="1642320691418">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="334" y="179" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1641611015338" />
     <state x="334" y="186" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1642320691418" />
-    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup" timestamp="1643202704269">
+    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup" timestamp="1643435265154">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641906065487" />
-    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1643202704269" />
+    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1643435265154" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

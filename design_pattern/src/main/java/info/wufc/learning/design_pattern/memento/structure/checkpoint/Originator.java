@@ -11,7 +11,7 @@ import java.util.Vector;
 public class Originator {
 
     private Vector<String> states;
-    // 检查点指数: 每一个状态都有一个指数
+    // 每发生状态改变都对应新的版本。
     private int idx;
 
 
