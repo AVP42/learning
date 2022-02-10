@@ -14,6 +14,7 @@ public class ProxyFoo  {
         Enhancer enhancer = new Enhancer();
         enhancer.setCallback((InvocationHandler) (o, method, objects) -> {
             System.out.println("ProxyFoo.invoke cglib begin");
+            // 这里使用了代理对象，如果只是不针对特定的对象（比如doWork用到了realFoo的属性），这里可以直接使用o.doWork().
             realFoo.doWork();
             System.out.println("ProxyFoo.invoke cglib end");
             return null;
@@ -21,5 +22,12 @@ public class ProxyFoo  {
         enhancer.setSuperclass(RealFoo.class.getSuperclass());
         enhancer.setClassLoader(RealFoo.class.getClassLoader());
         return (FooSuper) enhancer.create();
+    }
+
+    public static void main(String[] args) {
+        RealFoo realFoo = new RealFoo();
+        System.out.println(realFoo);
+        FooSuper fooSuper = create(realFoo);
+        fooSuper.doWork();
     }
 }
