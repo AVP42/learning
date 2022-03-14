@@ -37,8 +37,13 @@ public class G1GC {
         for (int i = 0; i < 5; i++) {
             objs[i] = null;
         }
+            Obj obj1 = new Obj(new byte[4 * _1Mb]);
+            Obj obj2 = new Obj(new byte[4 * _1Mb]);
+            Obj obj3 = new Obj(new byte[4 * _1Mb]);
+            Obj obj4 = new Obj(new byte[4 * _1Mb]);
+            Obj obj5 = new Obj(new byte[4 * _1Mb]);
+            Obj obj6 = new Obj(new byte[4 * _1Mb]);
 
-        Obj obj = new Obj(new byte[2 * _1Mb]);
 
 //        手动GC
 //        System.gc();

@@ -4,490 +4,121 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318261f-47a7-4fcc-897b-98e5739a4895" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/DirectMemoryOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/ReachabilityAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/ReferenceCounterGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/FinalizeEscapeGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/G1GC.java" afterDir="false" />
+    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/Type/Foo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/Type/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/boxing/IntegerBoxing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/boxing/StringPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/hsdis/Simple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/hsdis/VolatileCompile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/monitor/ThreadMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/DynamicAgeJudgement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/HandlePromotionFailure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/PretenureSizeThreshold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/keyword/_finally/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/0_github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/0_github.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/java_basic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/RuntimeConstantPoolOOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/RuntimeConstantPoolOOM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/G1GC.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/G1GC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/java/jvm总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/jvm总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/java/resources/学习资源.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/resources/学习资源.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="package-info" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\JAVA\repository" />
-        <option name="mavenHome" value="E:\JAVA\apache-maven-3.3.9" />
+        <option name="mavenHome" value="E:/JAVA/apache-maven-3.3.9" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="C:\Users\Administrator\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectId" id="23OhL0L03iy5PsuWPus6wwbzhZf" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="26NrFxz6Z46ozXsncYs6UCpVdKX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8-241" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\learning\0_github\java_basic\src\main\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\singleton\break" />
-      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\observer\java_support\" />
-      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern\mediator\deformation" />
-      <recent name="D:\learning\0_github\design_pattern\src\main\java\info\wufc\learning\design_pattern" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="info.wufc.learning.java_basic.jvm.oom.gc" />
-      <recent name="info.wufc.learning.design_pattern.singleton" />
-      <recent name="info.wufc.learning.design_pattern.singleton.destruct" />
-      <recent name="info.wufc.learning.design_pattern.interpreter.demonstrate" />
-      <recent name="info.wufc.learning.design_pattern.observer.structure" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="info.wufc.learning.design_pattern.command.structure" />
-      <recent name="info.wufc.learning.design_pattern.memento.structure.checkpoint" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.G1GC">
-    <configuration name="DirectMemoryOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.DirectMemoryOOM" />
-      <module name="java_basic" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCApplicationConcurrentTime -XX:+PrintHeapAtGC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinalizeEscapeGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.gc.FinalizeEscapeGC" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.gc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G1GC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.gc.G1GC" />
-      <module name="java_basic" />
-      <option name="VM_PARAMETERS" value=" -XX:+PrintGCDateStamps -XX:+PrintGC  -Xmx10m -XX:+UseG1GC  -XX:+PrintCommandLineFlags" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.gc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Jdk7MethodAreaOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.Jdk7MethodAreaOOM" />
-      <module name="java_basic" />
-      <option name="VM_PARAMETERS" value="-xx:PermSize=10M -XX:MaxPermSize=10M" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReferenceCounterGC-CMS" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.ReferenceCounterGC" />
-      <module name="java_basic" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintCommandLineFlags -XX:+PrintGCDateStamps -XX:+PrintGCDetails  -Xmx10m -XX:+UseConcMarkSweepGC  " />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReferenceCounterGC-G1" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.ReferenceCounterGC" />
-      <module name="java_basic" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintCommandLineFlags -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UnlockDiagnosticVMOptions   -Xmx10m -XX:+UseG1GC  " />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReferenceCounterGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.jvm.oom.ReferenceCounterGC" />
-      <module name="java_basic" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintCommandLineFlags -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCApplicationConcurrentTime -XX:+PrintHeapAtGC -Xmx100m  -verbose:gc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.jvm.oom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.ReferenceCounterGC-CMS" />
-      <item itemvalue="Application.ReferenceCounterGC-G1" />
-      <item itemvalue="Application.Jdk7MethodAreaOOM" />
-      <item itemvalue="Application.DirectMemoryOOM" />
-      <item itemvalue="Application.ReferenceCounterGC" />
-      <item itemvalue="Application.FinalizeEscapeGC" />
-      <item itemvalue="Application.G1GC" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.G1GC" />
-        <item itemvalue="Application.ReferenceCounterGC" />
-        <item itemvalue="Application.FinalizeEscapeGC" />
-        <item itemvalue="Application.DirectMemoryOOM" />
-        <item itemvalue="Application.Jdk7MethodAreaOOM" />
-      </list>
-    </recent_temporary>
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b318261f-47a7-4fcc-897b-98e5739a4895" name="Default Changelist" comment="" />
-      <created>1641610981442</created>
+      <changelist id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="" />
+      <created>1647274809748</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1641610981442</updated>
-      <workItem from="1641610983347" duration="412000" />
-      <workItem from="1641616836227" duration="10063000" />
-      <workItem from="1641627356919" duration="989000" />
-      <workItem from="1641628810333" duration="12998000" />
-      <workItem from="1641692791279" duration="37125000" />
-      <workItem from="1641814548387" duration="10330000" />
-      <workItem from="1641904092377" duration="6714000" />
-      <workItem from="1641993993632" duration="3306000" />
-      <workItem from="1642212688594" duration="9862000" />
-      <workItem from="1642226080543" duration="2044000" />
-      <workItem from="1642228289380" duration="1644000" />
-      <workItem from="1642229999423" duration="15485000" />
-      <workItem from="1642298520737" duration="15180000" />
-      <workItem from="1642322531128" duration="4423000" />
-      <workItem from="1642426692739" duration="5534000" />
-      <workItem from="1642508175368" duration="10440000" />
-      <workItem from="1642519516638" duration="430000" />
-      <workItem from="1642598296985" duration="1391000" />
-      <workItem from="1642903824392" duration="12165000" />
-      <workItem from="1642931017622" duration="10468000" />
-      <workItem from="1643110971199" duration="9467000" />
-      <workItem from="1643199922897" duration="10448000" />
-      <workItem from="1643290096421" duration="4355000" />
-      <workItem from="1643420345228" duration="28719000" />
-      <workItem from="1644319591706" duration="633000" />
-      <workItem from="1644502015417" duration="4870000" />
-      <workItem from="1644588023999" duration="3569000" />
-      <workItem from="1644632152450" duration="7236000" />
-      <workItem from="1644667724192" duration="893000" />
-      <workItem from="1644670230028" duration="2088000" />
-      <workItem from="1644717107419" duration="13417000" />
+      <updated>1647274809748</updated>
+      <workItem from="1647274817859" duration="2402000" />
     </task>
-    <task id="LOCAL-00001" summary="设计模式">
-      <created>1641655168257</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1641655168257</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="设计模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="440" y="93" key="#Project_Structure" timestamp="1641611287030">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1641611287030" />
-    <state x="118" y="236" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644734901451">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="118" y="236" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1644734901451" />
-    <state x="1176" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1643121422047">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1176" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1643121422047" />
-    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1644734779362">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1171" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641906629518" />
-    <state x="1171" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1644734779362" />
-    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1642251376644">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641818929377" />
-    <state x="779" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1642251376644" />
-    <state x="845" y="229" key="#xdebugger.evaluate" timestamp="1644505302463">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="845" y="229" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1644505302463" />
-    <state x="806" y="140" key="CommitChangelistDialog2" timestamp="1641655160311">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="806" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1641655160311" />
-    <state width="459" height="466" key="DebuggerActiveHint" timestamp="1644505479563">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="459" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1644505479563" />
-    <state x="368" y="48" key="DiffContextDialog" timestamp="1642940308646">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="368" y="48" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1642940308646" />
-    <state x="849" y="250" key="FileChooserDialogImpl" timestamp="1643461439599">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="849" y="250" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1643461439599" />
-    <state width="1406" height="449" key="GridCell.Tab.0.bottom" timestamp="1644735381335">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381108" />
-    <state width="1406" height="449" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1644735381335" />
-    <state width="1406" height="449" key="GridCell.Tab.0.center" timestamp="1644735381335">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381107" />
-    <state width="1406" height="449" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1644735381335" />
-    <state width="1406" height="449" key="GridCell.Tab.0.left" timestamp="1644735381335">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381107" />
-    <state width="1406" height="449" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1644735381335" />
-    <state width="1406" height="449" key="GridCell.Tab.0.right" timestamp="1644735381335">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1330" height="329" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641913381108" />
-    <state width="1406" height="449" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1644735381335" />
-    <state width="1406" height="212" key="GridCell.Tab.1.bottom" timestamp="1644505640604">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1406" height="212" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1644505640604" />
-    <state width="1406" height="212" key="GridCell.Tab.1.center" timestamp="1644505640604">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1406" height="212" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1644505640604" />
-    <state width="1406" height="212" key="GridCell.Tab.1.left" timestamp="1644505640603">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1406" height="212" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1644505640603" />
-    <state width="1406" height="212" key="GridCell.Tab.1.right" timestamp="1644505640604">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1406" height="212" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1644505640604" />
-    <state x="1100" y="199" key="RollbackChangesDialog" timestamp="1642940310571">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1100" y="199" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1642940310571" />
-    <state x="118" y="122" key="SettingsEditor" timestamp="1644668627696">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="461" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1641906532650" />
-    <state x="118" y="122" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1644668627696" />
-    <state width="498" height="464" key="SwitcherDM" timestamp="1642429878931">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1641703300692" />
-    <state width="498" height="464" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1642429878931" />
-    <state x="799" y="288" key="Vcs.Push.Dialog.v2" timestamp="1641655171579">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="799" y="288" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641655171579" />
-    <state width="1774" height="580" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1642327767553">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1774" height="580" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1080@0.0.1920.1080" timestamp="1642327767553" />
-    <state x="742" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1642316345601">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="742" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641730827940" />
-    <state x="742" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1642316345601" />
-    <state x="566" y="285" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1642315824091">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="566" y="285" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1642315824091" />
-    <state x="1082" y="271" key="extract.method.dialog" timestamp="1643122795796">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1082" y="271" key="extract.method.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1643122795796" />
-    <state x="1051" y="236" width="709" height="617" key="find.popup" timestamp="1644504945005">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1051" y="227" width="671" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641654710712" />
-    <state x="1051" y="236" width="709" height="617" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1644504945005" />
-    <state x="334" y="186" key="new project wizard" timestamp="1642320691418">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="334" y="179" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1641611015338" />
-    <state x="334" y="186" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1642320691418" />
-    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup" timestamp="1644591948632">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1248" y="236" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641906065487" />
-    <state x="1248" y="245" width="672" height="705" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1644591948632" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/Client.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/HungrySingletonByEnum.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <condition expression="var1.startsWith(&quot;info.wufc&quot;)" language="JAVA" />
-          <url>jar://E:/bigdata/software/jdk/jre/lib/rt.jar!/sun/misc/Launcher.class</url>
-          <line>174</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/bigdata/software/jdk/src.zip!/java/lang/ClassLoader.java</url>
-          <line>956</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/Client.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/Client.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/destruct/Client.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/file/PathTest.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/proxy/structure/dynamicproxy/jdk/Client.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/Jdk7MethodAreaOOM.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/Jdk7MethodAreaOOM.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/proxy/structure/dynamicproxy/cglib/ProxyFoo.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/design_pattern/src/main/java/info/wufc/learning/design_pattern/singleton/LazySingletonByInnerClass.java</url>
-          <line>16</line>
-          <properties field="instance" class="info.wufc.learning.design_pattern.singleton.LazySingletonByInnerClass.SingletonHolder" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>

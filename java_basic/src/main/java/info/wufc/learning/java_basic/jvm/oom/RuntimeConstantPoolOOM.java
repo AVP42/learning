@@ -29,6 +29,17 @@ public class RuntimeConstantPoolOOM {
         String str2 = new StringBuilder("ja").append("va").toString();
         System.out.println(str2.intern() == str2);
 
+
+        String s = "计算机软件";
+        System.out.println(s == str1); // true
+
+        String s2 = "alien"; // 这种方式先在常量池查找，如果找到直接返回引用，否则直接缓存在堆上的字符串常量池，并返回引用
+        String s3 = "alien";
+        String s4 = new String("alien"); // 直接在堆上分配
+        System.out.println(s2 == s3); // true
+        System.out.println(s2 == s4); // false s4是一个新的堆对象
+        System.out.println(s2 == s4.intern()); // true
+
     }
 
 }
