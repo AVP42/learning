@@ -40,5 +40,7 @@ public class PathTest {
         URL url5 = PathTest.class.getClassLoader().getResource("/input.txt");
         // file:/D:/learning/0_github/java_basic/target/classes/input.txt
         URL url6 = PathTest.class.getClassLoader().getResource("./input.txt");
+        
+
     }
 }
