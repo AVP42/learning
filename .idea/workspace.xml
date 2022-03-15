@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/Type/Foo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/Type/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/boxing/IntegerBoxing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/boxing/StringPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/hsdis/Simple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/hsdis/VolatileCompile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/monitor/ThreadMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/DynamicAgeJudgement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/HandlePromotionFailure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/PretenureSizeThreshold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/keyword/_finally/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/0_github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/0_github.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/java_basic.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/RuntimeConstantPoolOOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/RuntimeConstantPoolOOM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/G1GC.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/jvm/oom/gc/G1GC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/java/jvm总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/jvm总结.md" afterDir="false" />
-    </list>
+    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +40,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="26NrFxz6Z46ozXsncYs6UCpVdKX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
