@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/0_github.iml" filepath="$PROJECT_DIR$/.idea/0_github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_algorithm/datastructure_algorithm.iml" filepath="$PROJECT_DIR$/datastructure_algorithm/datastructure_algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_basic/java_basic.iml" filepath="$PROJECT_DIR$/java_basic/java_basic.iml" />
     </modules>
   </component>

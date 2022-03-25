@@ -1,6 +1,5 @@
 package info.wufc.learning.java_basic.jvm.oom.gc;
 
-import sun.tools.jstack.JStack;
 
 import java.util.concurrent.TimeUnit;
 
