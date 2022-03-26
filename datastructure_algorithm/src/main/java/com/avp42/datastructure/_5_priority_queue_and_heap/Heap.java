@@ -58,6 +58,7 @@ public class Heap<T> {
     public void siftDown(int ind){
         // 下沉，对比左右子树，取较大值与之交换
         // 左子树为 2*i+1 右子树为2*i+2
+        // 这个判断是为了下标不越界
         while(2*ind + 1 < cnt){
             int temp = ind;
             if(cmp.compare((T)queue[temp],(T)queue[2*ind+1]) > 0) temp = 2*ind+1;
