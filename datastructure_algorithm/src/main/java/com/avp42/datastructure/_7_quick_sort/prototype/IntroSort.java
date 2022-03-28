@@ -75,6 +75,9 @@ public class IntroSort {
                 }
             } while (x <= y);
             // 最终总是 ... y,x,....的顺序
+            // 考察 3 4 5 2 7 5 8，第一轮过后
+            //     3 4 5 2 7 5 8
+            // 两个5不一定会挨在一起，这是这种算法的不太好的地方
             _quickSort(arr,x,r);
             r = y;
         }
@@ -91,7 +94,7 @@ public class IntroSort {
                 }
                 while(arr[x] < base) x ++;
                 System.out.println("inline---- base:" + base + " x:"+x+" y:"+y);
-                // 这些等号与wile(x<=y)的等号是不能省略的
+                // 这些等号与wile(x<=y)的等号是不能省略的, 要执行才能保证循环可以退出
                 if(x <= y){
                     swap(arr, x, y);
                     x++; y --;
@@ -104,7 +107,7 @@ public class IntroSort {
     }
 
 
-    // 普通的插入排序--- 在sortedSet中顺序查找
+    // 普通的插入排序--- 在sortedSet中顺序查找，然后进行元素移动
     private void insertionSort(int[] arr, int l, int r) {
         // 插入排序思想，左边是已排序的，右边是待排序的，每次从待排序中的首个元素，遍历已排序的序列，然后插入---扑克牌
         for(int i = 1; i< arr.length; i ++){
@@ -120,7 +123,7 @@ public class IntroSort {
         }
     }
 
-    // 插入排序--- 在sortedSet中逆序查找，进行反冒泡
+    // 插入排序--- 在sortedSet中逆序查找，进行反冒泡，查找效率要更高一些。
     private void insertionSortV2(int[] arr, int l, int r) {
        for(int i = l + 1; i <= r; i++){
            int j = i;
