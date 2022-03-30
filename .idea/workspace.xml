@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/exercise/Sorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/insertionSort.java" afterDir="false" />
+    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="sorting">
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/quick_select/KthNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/selection/SelectMajority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/summary/Sorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/exercise/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/exercise/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/insertionSort.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/prototype/IntroSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/prototype/IntroSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +83,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -114,6 +117,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KthNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure._7_quick_sort.quick_select.KthNumber" />
+      <module name="datastructure_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.avp42.datastructure._7_quick_sort.quick_select.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LockSupportTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.juc.LockSupportTest" />
       <module name="java_basic" />
@@ -128,11 +144,11 @@
       </method>
     </configuration>
     <configuration name="Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure._7_quick_sort.exercise.Sorting" />
+      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure._7_quick_sort.summary.Sorting" />
       <module name="datastructure_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure._7_quick_sort.exercise.*" />
+          <option name="PATTERN" value="com.avp42.datastructure._7_quick_sort.summary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,6 +159,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Sorting" />
+        <item itemvalue="Application.KthNumber" />
         <item itemvalue="Application.BinarySearch2" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LockSupportTest" />
@@ -171,7 +188,10 @@
       <workItem from="1648124782275" duration="1984000" />
       <workItem from="1648207123426" duration="2466000" />
       <workItem from="1648255787842" duration="3437000" />
-      <workItem from="1648466863679" duration="14364000" />
+      <workItem from="1648466863679" duration="14679000" />
+      <workItem from="1648553301129" duration="109000" />
+      <workItem from="1648553459640" duration="11456000" />
+      <workItem from="1648638385285" duration="8687000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1647346669896</created>
@@ -194,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648261528847</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sorting">
+      <created>1648485320625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485320625</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +241,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="JUC" />
-    <option name="LAST_COMMIT_MESSAGE" value="JUC" />
+    <MESSAGE value="sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
