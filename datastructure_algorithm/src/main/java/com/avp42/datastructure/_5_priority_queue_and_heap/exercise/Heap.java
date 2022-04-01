@@ -27,7 +27,7 @@ public class Heap {
     }
 
     private void resize() {
-        int newCapacity = cnt + cnt <= 64 ? cnt : (cnt >> 1);
+        int newCapacity = cnt + cnt <= 64 ? cnt + 2 : (cnt >> 1);
         int[] newArr = new int[newCapacity];
         System.arraycopy(arr, 0, newArr, 0, cnt);
         arr = newArr;
