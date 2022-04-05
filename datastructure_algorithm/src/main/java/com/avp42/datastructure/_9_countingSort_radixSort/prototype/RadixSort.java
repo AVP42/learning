@@ -15,7 +15,7 @@ public class RadixSort {
         int[] count = new int[65536];
         int[] temp = new int[arr.length];
         // low 16 bit sort
-        // 利用与运算，求得第16位
+        // 利用与运算，求得低16位
         // 求尾坐标
         for (int num : arr) {
             System.out.println("num: " + num + " low16: " + low16(num));

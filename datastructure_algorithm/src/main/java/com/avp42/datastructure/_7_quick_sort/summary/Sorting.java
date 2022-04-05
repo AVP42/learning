@@ -43,6 +43,16 @@ public class Sorting {
         System.out.println("--------heapSort");
         int[] arr11 = {5, 4, 5, 2, 7, 5, 9, 8};
         sorting.heapSort(arr11, 0, arr.length - 1);
+        System.out.println("--------countSort");
+        int[] arr12 = {5, 4, 5, 2, 7, 5, 9, 8};
+        sorting.bucketSort(arr12, 0, arr.length - 1);
+        System.out.println("--------countSort2");
+        int[] arr12_2 = {5, 4, 5, 2, 7, 5, 9, 8};
+        sorting.bucketSort(arr12_2, 0, arr.length - 1);
+        System.out.println("--------radixSort");
+        int[] arr13 = {13, 21, 11, 32, 31, 22, 21};
+        sorting.radixSort(arr13, 0, arr13.length - 1);
+
 
     }
 
@@ -334,6 +344,79 @@ public class Sorting {
             i = lastExchangeIdx;
             System.out.println(Arrays.toString(arr));
         }
+    }
+
+    /**
+     * 桶排序，也叫计数排序：适用于值域有限的排序。
+     * 由于值域有限，就可能出现很多重复的元素。
+     * 如果值域很广，需要的空间就会很大
+     * 如果利用前缀和来定位，类似下面的基数排序，需要额外的数组
+     */
+    public void bucketSort(int[] arr, int l , int r){
+        int[] cnt = new int[10];
+        for(int i = l; i <= r; i ++){
+            cnt[arr[i]] += 1;
+        }
+        for(int i = l,j = 0; i<= r; i ++){
+            while(cnt[j] == 0){
+                j ++;
+            }
+            arr[i]  = j;
+            cnt[j] -= 1;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public void bucketSort2(int[] arr, int l , int r){
+        int[] cnt = new int[10];
+        for(int i = l; i <= r; i ++){
+            cnt[arr[i]] += 1;
+        }
+        for(int i = 0, j = 0; i < 10; i ++){
+            while(cnt[i] -- > 0){
+                arr[j ++] = i;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+
+    /**
+     * 基数排序：基于计数排序，进行分区处理，比如可以对高16位和低16位分开处理，或者进一步细分，进一步细分需要的空间就可以少一点
+     */
+    public void radixSort(int[] arr, int l, int r){
+        int n = r - l + 1;
+        int[] temp = new int[n];
+        int[] cnt = new int[65536];
+        for(int i= l; i <= r;i ++){
+            cnt[low(arr[i])] += 1;
+        }
+        for(int i = 1; i < 65535; i ++){
+            cnt[i] += cnt[i-1];
+        }
+        for(int i = r; i >= l; i--){
+            temp[--cnt[low(arr[i])]] = arr[i];
+        }
+        System.out.println(Arrays.toString(temp));
+        // 处理高16位
+        Arrays.fill(cnt, 0);
+        for(int i = r; i>=l; i --){
+            cnt[hi(arr[i])] += 1;
+        }
+        for(int i = 1; i < 65535; i ++){
+            cnt[i] += cnt[i-1];
+        }
+        for(int i = r; i >= l; i --){
+            arr[l + (--cnt[hi(temp[i])])] = temp[i];
+        }
+    }
+
+    private int low(int num){
+        return num & 0xffff;
+    }
+
+    private int hi(int num){
+        return (num & 0xffff0000) >>> 16;
     }
 
 

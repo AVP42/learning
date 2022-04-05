@@ -49,6 +49,7 @@ public class RedBlackBBST {
 
     public Node delete(int key){
         root = delete0(root, key);
+        // 删除也要保证这点
         root.color = 1;
         return root;
     }
@@ -93,9 +94,6 @@ public class RedBlackBBST {
         return maintainBalance_fromInsert(root);
     }
 
-    private boolean hasRedChild(Node root){
-        return  root.left.color == 0 || root.right.color == 0;
-    }
 
     private Node maintainBalance_fromInsert(Node root){
         if(root == NIL) return root;
@@ -104,12 +102,13 @@ public class RedBlackBBST {
         if(root.left.color == 0 && hasRedChild(root.left)) unbalancedChild = 1;
         if(root.right.color == 0 && hasRedChild(root.right)) unbalancedChild = 2;
         if(unbalancedChild < 0) return root;
-        // 肯定已经失衡，双红 + uncle 红可以提取出来
+        // 肯定已经失衡
+        // 情况1：双红 + uncle 红的情况，直接改颜色即可
         if(root.left.color == 0 && root.right.color == 0){
             handleUncleRed(root);
             return root;
         }
-        // 处理 双红 + uncle 黑的情况
+        // 情况2： 双红 + uncle 黑的情况，
         if(unbalancedChild == 1){
             if(root.left.right.color == 0){
                 // LR 型，先小左旋
@@ -133,11 +132,12 @@ public class RedBlackBBST {
 
     private Node maintainBalance_fromDelete(Node root) {
         // 失衡类型
-        // 1. 双黑 + brother 红  => 旋转，使得brother成为newFather，改为黑色；oldFather(之前一定为黑色）改为红色 => 转换为双黑 + brother 黑
+        // 1. 双黑 + brother 红  => 旋转，原根节点与旧根节点颜色互换 => 转换为双黑 + brother 黑
+                            // 旋转，使得brother成为newFather，改为黑色；oldFather(之前一定为黑色）改为红色。这样me就和原brother的子节点是新兄弟了
         // 2. 双黑 + brother 黑
-            // 2.1 brother.left=黑， brother.right=黑 ===> x与brother 褪色， father + 黑色。father可能变成双黑，递归往上
+            // 2.1 brother.left=黑， brother.right=黑 ===> x与brother 褪色， father + 黑色 ==> father可能变成双黑，递归往上
             // 2.2 brother.同侧孩子=红  (比如brother是右侧的brother，且brother.right=红，表示RR) ===>   大左旋，me和brother变黑，newFather变成原oldFather的颜色，me褪一层黑色。
-            // 2.3 brother.异侧孩子=红 (比如brother是右侧的brother，且brother.left=红，表示RL) ==> 小右旋 +  原根节点与旧根节点颜色互换。
+            // 2.3 brother.异侧孩子=红 (比如brother是右侧的brother，且brother.left=红，表示RL) ==> 小右旋 +  原根节点与旧根节点颜色互换 ==>  转换成同侧孩子为红色
         if(root.left.color!=2 && root.right.color!=2) return root;
         int flag;
         // 如果brother是红色
@@ -207,6 +207,9 @@ public class RedBlackBBST {
         root.color = 0;
     }
 
+    private boolean hasRedChild(Node root){
+        return  root.left.color == 0 || root.right.color == 0;
+    }
 
     private Node rightRotate(Node root) {
         Node temp = root.left;
