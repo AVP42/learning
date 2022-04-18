@@ -1,9 +1,7 @@
 package com.avp42.datastructure.chapter7.avl_tree;
 
-import com.avp42.basic.System.InputStreamReaderDemo;
 
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * @description: 二叉搜索树或者叫二叉排序树

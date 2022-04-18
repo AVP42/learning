@@ -12,6 +12,7 @@ public class KthNumber {
         System.out.println(obj.kthNumber(arr, 7));
         System.out.println(obj.kthNumber2(arr, 7));
         System.out.println(obj.kthNumber3(arr, 7));
+        System.out.println(obj.kthNumber4(arr, 0, arr.length - 1, 7));
 
     }
 
@@ -87,6 +88,28 @@ public class KthNumber {
             System.out.println("[" + l + "," + r+"]");
         }
         return arr[k - 1];
+    }
+
+    // 利用同向双指针
+    public int kthNumber4(int[] arr, int l, int r , int k){
+        int mid = (int) (Math.random() * (r - l) + l);
+        // 将选中的值放到最左边
+        swap(arr, l, mid);
+        int i = l, base = arr[l];
+        // 同向双指针
+        for(int j = i+1; j<= r; j ++){
+            if(arr[j] < base){
+                swap(arr, j, i +1);
+                i += 1;
+            }
+        }
+        // 将base的值放到合适的位置
+        swap(arr, i, l);
+        int leftCnt = i - l + 1;
+        if(leftCnt==k) return arr[i];
+        else if(leftCnt < k) return kthNumber4(arr, i + 1, r, k - leftCnt);
+        else return kthNumber4(arr, l, i - 1, k);
+
     }
 
     private void swap(int[] arr, int l, int r){

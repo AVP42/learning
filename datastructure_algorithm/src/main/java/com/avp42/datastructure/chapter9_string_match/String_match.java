@@ -1,6 +1,8 @@
 package com.avp42.datastructure.chapter9_string_match;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -113,6 +115,7 @@ public class String_match {
              if(text.charAt(i) == pattern.charAt(j+1)) {
                  j++;
              }
+             // 因为j是从-1开始的，所以当j==m-1说明已经匹配完成
              if(j == m - 1) {
                  return i - j;
              }
@@ -120,17 +123,35 @@ public class String_match {
          return -1;
     }
 
+    /**
+     * 考察 llo 模式串
+     * 计算next[0]时，假设i=0失配，此时j=-1, i-1已经对上-1，万能字符，不能再跳，所以next[0] = -1;
+     *
+     * x为哨兵节点，可以和任意字符匹配，所在的位置为-1；
+     * 计算next[1], 假设i=1失配，此时j=0，则i-1对齐到next[j] = next[0] = -1
+     *  llo
+     *  xllo
+     *  发现i=1与j+1=0匹配，所以next[1] = next[0] + 1 = 0;
+     *  计算next[2], 假设i=2失配，此时j=1，则i-1对齐到j = next[j] = next[1] = 0;
+     *  llo
+     *  xllo
+     *  发现i=2与j+1=1失配，所以继续i-1对齐到j = next[j] = next[0] = -1;
+     *  llo
+     *   xllo
+     *  发现i=2与j+1=0失配，但i-1已经对齐上-1，万能字符，不能再跳，所以next[2] = -1;
+     */
     private static int[] getNext_2_1(String pattern){
         int m = pattern.length();
         int[] next = new int[m];
         next[0] = -1;
         for(int i = 1, j = -1; i < m; i++){
             while(j > -1 && pattern.charAt(i) != pattern.charAt(j+1)) j = next[j];
-            if(pattern.charAt(i) == pattern.charAt(j+1)) j ++;
+            if(pattern.charAt(i) == pattern.charAt(j+1)) j ++; // 可以看出当j=-1且arr[i]!=arr[j-1]时，i进入下一个循环
             next[i] = j;
         }
         return next;
     }
+
 
 
     /**
@@ -142,7 +163,7 @@ public class String_match {
     public static int sunday(String text, String pattern){
         int n = text.length(), m = pattern.length();
         int[] pos = new int[128];
-        // 如果不存在，则整串移动
+        // 如果不存在，则整串移动, 没有这个也不会出错，只是会重复比对了一次，这次是无效的，因为都已经不再模式串中了
         Arrays.fill(pos, -1);
         // 记录每个元素最后出现的位置
         for(int i = 0 ; i < m; i ++) pos[pattern.charAt(i)] = i;
@@ -203,6 +224,8 @@ public class String_match {
 
 
     public static void main(String[] args) {
+        System.out.println(Arrays.toString(getNext_2_1("aacecaaa#aaacecaa")));
+
         String text = "hello";
         String pattern1 = "he";
         String pattern2 = "low";
