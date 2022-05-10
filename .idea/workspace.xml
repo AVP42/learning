@@ -4,17 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="sorting">
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/quick_select/KthNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/selection/SelectMajority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/summary/Sorting.java" afterDir="false" />
+    <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/acm/BuildTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/Stream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/booleansize/BooleanSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/swap/temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/od/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/od/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/od/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketio/BIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketio/NIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/zerocopy/Channel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/exercise/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/exercise/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/BubbleSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/HeapSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/otherSort/insertionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/prototype/IntroSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/prototype/IntroSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/System/ScannerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/System/ScannerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/summary/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/summary/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter5/dfs/Dfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter5/dfs/Dfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/temp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/java/CMS收集器.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/CMS收集器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/java/JUC/并发编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/JUC/并发编程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/java/jvm总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/jvm总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartIII_传输层.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartIII_传输层.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartII_应用层.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartII_应用层.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartVII_网络安全.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartVII_网络安全.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,27 +91,35 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/language/java/resources_ignore/sources/0cb452d66676/jdk-0cb452d66676/src/share/classes/sun/nio/ch/FileChannelImpl.java" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learning\0_github\datastructure_algorithm\src\main\java\com\avp42\interview\execise" />
+      <recent name="D:\learning\0_github\datastructure_algorithm\src\main\java\com\avp42\interview\od" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\learning\0_github\language\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="info.wufc.learning.java_basic.io" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Sorting">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure.chapter5.binary_algorithm.BinarySearch" />
+  <component name="RunManager" selected="Application.Main3">
+    <configuration name="BooleanSize$Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avp42.basic.booleansize.BooleanSize$Test" />
       <module name="datastructure_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure.chapter5.binary_algorithm.*" />
+          <option name="PATTERN" value="com.avp42.basic.booleansize.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure.chapter5.binary_algorithm.BinarySearch2" />
+    <configuration name="BuildTree$Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avp42.acm.BuildTree$Method" />
       <module name="datastructure_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure.chapter5.binary_algorithm.*" />
+          <option name="PATTERN" value="com.avp42.acm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KthNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure._7_quick_sort.quick_select.KthNumber" />
+    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avp42.interview.execise.Main1" />
       <module name="datastructure_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure._7_quick_sort.quick_select.*" />
+          <option name="PATTERN" value="com.avp42.interview.execise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockSupportTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.juc.LockSupportTest" />
-      <module name="java_basic" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avp42.interview.execise.Main2" />
+      <module name="datastructure_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="info.wufc.learning.java_basic.juc.*" />
+          <option name="PATTERN" value="com.avp42.interview.execise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.datastructure._7_quick_sort.summary.Sorting" />
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avp42.interview.execise.Main3" />
       <module name="datastructure_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.datastructure._7_quick_sort.summary.*" />
+          <option name="PATTERN" value="com.avp42.interview.execise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sorting" />
-        <item itemvalue="Application.KthNumber" />
-        <item itemvalue="Application.BinarySearch2" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.LockSupportTest" />
+        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main1" />
+        <item itemvalue="Application.BooleanSize$Test" />
+        <item itemvalue="Application.BuildTree$Method" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +214,32 @@
       <workItem from="1648466863679" duration="14679000" />
       <workItem from="1648553301129" duration="109000" />
       <workItem from="1648553459640" duration="11456000" />
-      <workItem from="1648638385285" duration="8687000" />
+      <workItem from="1648638385285" duration="8712000" />
+      <workItem from="1648724403398" duration="2919000" />
+      <workItem from="1648810682827" duration="4737000" />
+      <workItem from="1648898120265" duration="2247000" />
+      <workItem from="1649248093452" duration="612000" />
+      <workItem from="1649330493509" duration="1316000" />
+      <workItem from="1649416091823" duration="596000" />
+      <workItem from="1649684423110" duration="884000" />
+      <workItem from="1650096376576" duration="2753000" />
+      <workItem from="1650168986856" duration="9946000" />
+      <workItem from="1650271599116" duration="8679000" />
+      <workItem from="1650329458044" duration="4612000" />
+      <workItem from="1650423543103" duration="3186000" />
+      <workItem from="1650626518722" duration="3130000" />
+      <workItem from="1650674239488" duration="8424000" />
+      <workItem from="1650846263970" duration="17802000" />
+      <workItem from="1651027352322" duration="6561000" />
+      <workItem from="1651244327320" duration="598000" />
+      <workItem from="1651331802549" duration="702000" />
+      <workItem from="1651370211764" duration="597000" />
+      <workItem from="1651456697733" duration="4194000" />
+      <workItem from="1651541016907" duration="3095000" />
+      <workItem from="1651922855449" duration="16689000" />
+      <workItem from="1651976585458" duration="5987000" />
+      <workItem from="1652095005087" duration="2051000" />
+      <workItem from="1652196764103" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1647346669896</created>
@@ -221,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648485320625</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sorting">
+      <created>1648656997441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648656997441</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +294,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="update" />
     <MESSAGE value="JUC" />
     <MESSAGE value="sorting" />

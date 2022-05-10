@@ -43,15 +43,21 @@ public class Sorting {
         System.out.println("--------heapSort");
         int[] arr11 = {5, 4, 5, 2, 7, 5, 9, 8};
         sorting.heapSort(arr11, 0, arr.length - 1);
-        System.out.println("--------countSort");
+        System.out.println("--------mergeSort1");
         int[] arr12 = {5, 4, 5, 2, 7, 5, 9, 8};
-        sorting.bucketSort(arr12, 0, arr.length - 1);
+        sorting.mergeSort1(arr12, 0, arr.length - 1);
+        System.out.println("--------mergeSort2");
+        int[] arr13 = {5, 4, 5, 2, 7, 5, 9, 8};
+        sorting.mergeSort2(arr13, 0, arr.length - 1);
+        System.out.println("--------countSort");
+        int[] arr121 = {5, 4, 5, 2, 7, 5, 9, 8};
+        sorting.bucketSort(arr121, 0, arr.length - 1);
         System.out.println("--------countSort2");
         int[] arr12_2 = {5, 4, 5, 2, 7, 5, 9, 8};
         sorting.bucketSort(arr12_2, 0, arr.length - 1);
         System.out.println("--------radixSort");
-        int[] arr13 = {13, 21, 11, 32, 31, 22, 21};
-        sorting.radixSort(arr13, 0, arr13.length - 1);
+        int[] arr131 = {13, 21, 11, 32, 31, 22, 21};
+        sorting.radixSort(arr131, 0, arr131.length - 1);
 
 
     }
@@ -345,6 +351,50 @@ public class Sorting {
             System.out.println(Arrays.toString(arr));
         }
     }
+
+    /**
+     * 归并排序：分治思想, 每次都声明一个数组
+     */
+    public void mergeSort1(int[] arr, int l, int r){
+        if(l >= r) return;
+        int mid = (r - l) / 2  + l;
+        mergeSort1(arr, l, mid);
+        mergeSort1(arr, mid + 1, r);
+        int[] temp = new int[r - l + 1];
+        int p = l, q = mid + 1, i = 0;
+        while(p <= mid || q <= r){
+            if(p > mid || q <= r && arr[p] > arr[q]) temp[i++] = arr[q++];
+            else temp[i++]  = arr[p ++];
+        }
+        System.arraycopy(temp, 0, arr, l, r - l + 1);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    /**
+     * 归并排序，使用一个temp数组
+     */
+    int[] temp;
+    public void mergeSort2(int[] arr, int l, int r){
+        temp = new int[r - l + 1];
+        _mergeSort2(arr, l, r);
+    }
+
+    private void _mergeSort2(int[] arr, int l, int r){
+        if(l >= r) return;
+        int mid = ((r -l ) >> 1) + l;
+        _mergeSort2(arr, l, mid);
+        _mergeSort2(arr, mid + 1, r);
+        int p = l, q = mid + 1, k = l;
+        while(p <= mid || q <= r){
+            if(q > r || p <= mid && arr[p] < arr[q]) temp[k++] = arr[p ++];
+            else temp[k ++] = arr[q ++];
+        }
+        System.arraycopy(temp, l, arr, l, r - l + 1);
+        System.out.println(Arrays.toString(arr));
+    }
+
+
+
 
     /**
      * 桶排序，也叫计数排序：适用于值域有限的排序。

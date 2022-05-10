@@ -55,13 +55,13 @@
   
     ![image-20211121224619140](images/image-20211121224619140.png)
   
-    * 多工复用(Multiplexing)---双向实时通讯
+    * 多工复用(Multiplexing)--**-双向实时通讯**
   
       客户端和服务器均可同时发送多条请求，且不必按照顺序一一对应，避免“队头堵塞”
   
       ![image-20211121225455959](images/image-20211121225455959.png)
   
-    * 数据流(Streaming) 
+    * **数据流(Streaming)** 
   
       * 一个请求对应的所有数据包，形成数据流。每个数据流都有独有的数据流ID。
   
@@ -69,16 +69,16 @@
   
       * 支持取消数据流，通过发送信号(RST_STREAM帧)。*HTTP 1.1只能通过关闭TCP连接来取消数据传输。*
       
-    * 支持设置数据流的优先级
+    * **支持设置数据流的优先级**
     
   
   ![image-20211121225044210](images/image-20211121225044210.png)
   
-  * 头信息压缩(Header compression)
+  * **头信息压缩(Header compression)**
     
     由于HTTP是无状态的，所以每次请求都附带上所有的上下文信息，因此，请求中的很多字段都是重复的，比如Cookie和User-Agent, 即浪费带宽，也影响速度。
     
-    头信息压缩机制一方面会在发送前对头信息使用gzip或者compress压缩；另一方面，客户端和服务器均维护一张信息表，所有字段都会存入该表，生成索引号。以后就只发送索引号。
+    头信息压缩机制**一方面会在发送前对头信息使用gzip或者compress压缩；**另一方面，**客户端和服务器均维护一张信息表，所有字段都会存入该表**，生成索引号。以后就只发送索引号。
     
     > 使用HPACK压缩算法，用**Huffman算法**对标头字段进行编码。
     >
@@ -92,7 +92,7 @@
   
   ![image-20211121230724063](images/image-20211121230724063.png)
   
-  * 服务器推送(Server Push)
+  * **服务器推送(Server Push)**
     
     允许服务器未经请求，主动向客户端发送资源。比如服务器端可以提前将后续可能会请求的静态资源直接发送给客户端，减少了请求数。
     
@@ -270,11 +270,15 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
 
   3. 会话密钥计算
 
-     对于Client，Client将之前握手的消息进行Hash生成摘要， 基于**随机数A**使用**协商的算法**生成**会话密钥**,  使用会话密钥加密的摘要就是Finished中的data。
+     对于Client，Client将之前握手的消息进行Hash生成**摘要**， 基于**随机数A**使用**协商的算法**生成**会话密钥**,  使用会话密钥加密的摘要就是Finished中的data。
 
-     对于Server,   Server先使用私钥解密premaster key得到随机数A，使用协商的算法生成会话密钥
+     ​				并利用Server传过来的RSA public key 进行加密产生预备-主密钥(**premaster Key**)。
+
+     对于Server,   Server先使用私钥解密**premaster key**得到随机数A，同样使用**协商的算法**生成**会话密钥**，使用会话秘钥验证data。
 
      > 双方除了推导出相同的session Key，还会推导出HMAC key，用于保护数据完整性。
+
+     client在收到server的信息后，也会对摘要信息进行确认。
 
   4. 安全数据完整传输
 
@@ -303,78 +307,78 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
   ```
 
 * **Client Hello** 
-  
+
   Client 连接server的第一条消息。包括支持的TLS版本，加密算法，压缩算法等
-  
+
   ![image-20211123233612076](images/image-20211123233612076.png)
-  
+
   ![image-20211123233636039](images/image-20211123233636039.png)
-  
+
 * **Server Hello**
-  
+
   Server 返回选用的加密算法等
-  
+
   ![image-20211123233704011](images/image-20211123233704011.png)
-  
+
 * **Certificate**
-  
+
   返回Server的证书链Certificate Chain
-  
+
   ![image-20211123233929385](images/image-20211123233929385.png)
-  
+
 * **Certificate Status**
-  
+
   Client 为了避免下载CRL(证书注销列表)或者通过OCSP(Online Certificate Status Protocol) 实时查询证书带来的往返开销，要求server直接带上。但是server可以拒绝返回。
-  
+
   > 只有Client Hello的extension中包含status_request才会发送该消息给Client
-  
+
   [拓展阅读: CRL(Certificate Revocation List) 证书注销列表 与 OCSP(Online)](https://www.cfca.com.cn/20150811/101230759.html)
-  
+
 * **Server Key Exchange**
-  
+
   如果Certificate 消息无法承载所有能够让客户端交换premaster secrete的数据，就会发送该消息。
-  
+
   该消息包含Diffie-Hellman密钥协商协议的参数(比如D-H public key)等，有了这些参数，客户端才能完成Key exchange。
-  
+
   > 该消息只有指定的算法才需要发送，比如DHE_RSA； 而RSA, DH-RSA不需要。
-  
+
   ![image-20211123234039944](images/image-20211123234039944.png)
-  
+
 * **Server Hello Done**
+
+  该消息表示Server Hello的结束，server将会进入等待client的状态。
+
+  Client端收到该消息之后，开始验证数字证书。
+
+* **Client Key Exchange**
+
+  Client产生**随机数A**，并利用Server传过来的RSA public key 进行加密产生**预备-主密钥(premaster Key)**。该消息主要携带的就是
+
+  > 如果商定的算法是DHE_RSA，则使用D-H 参数中的public key
+
+  ![image-20211123234220920](images/image-20211123234220920.png)
+
+* **New Session Ticket**  *RFC 5077*
+
+  TLS的拓展功能，session ticket 包含了有状态的会话信息。
+
+  如果Client Hello中的extension中包含session_ticket，Server就会创建ticket发送给Client.
+
+  ![image-20211123234253995](images/image-20211123234253995.png)
+
+* **Change Cipher Spec**
+
+  表示加密策略的发生了改变，后续的内容都是使用商定的**会话密钥**来通信。
+
+* **Finished**
+
+  用于接收方可以识别Change Cipher Spec消息已经完成。这个消息是第一个使用会话密钥加密的消息。
+
+  Finished中的data是Client或者Server将之前握手的消息先生成摘要，然后使用会话密钥加密的内容。
+
+  > wireshark 有些版本显示为 Encrypted Handshake，是一个消息。
+
   
-    该消息表示Server Hello的结束，server将会进入等待client的状态。
-  
-    Client端收到该消息之后，开始验证数字证书。
-  
-  * **Client Key Exchange**
-  
-    Client产生**随机数A**，并利用Server传过来的RSA public key 进行加密产生**预备-主密钥(premaster Key)**。该消息主要携带的就是
-  
-    > 如果商定的算法是DHE_RSA，则使用D-H 参数中的public key
-  
-    ![image-20211123234220920](images/image-20211123234220920.png)
-  
-  * **New Session Ticket**  *RFC 5077*
-  
-    TLS的拓展功能，session ticket 包含了有状态的会话信息。
-  
-    如果Client Hello中的extension中包含session_ticket，Server就会创建ticket发送给Client.
-  
-    ![image-20211123234253995](images/image-20211123234253995.png)
-  
-  * **Change Cipher Spec**
-  
-    表示加密策略的发生了改变，后续的内容都是使用商定的**会话密钥**来通信。
-  
-  * **Finished**
-  
-    用于接收方可以识别Change Cipher Spec消息已经完成。这个消息是第一个使用会话密钥加密的消息。
-  
-    Finished中的data是Client或者Server将之前握手的消息先生成摘要，然后使用会话密钥加密的内容。
-  
-    > wireshark 有些版本显示为 Encrypted Handshake，是一个消息。
-  
-    
 
 * HTTP涉及的加密技术
   * 对称加密
@@ -403,7 +407,7 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
 
   对于客户端，通过全世界都信任的机构，客户端拿到证书之后就会校验是否合法；
 
-  即时中间人拿着一个合法的证书拦截客户端的请求，由于中间人只有证书的公钥，没有私钥，所以无法解密客户端的premaster secret，无法拿到那个**秘密的随机数**。
+  即时中间人拿着一个合法的证书拦截客户端的请求，由于中间人只有公钥，没有私钥，所以无法解密客户端的premaster secret，无法拿到那个**秘密的随机数**。
 
   ```sequence
   客户端->中间人:1.请求被中间人拦截
@@ -501,7 +505,7 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
 
   HTTP：超文本传输协议，使用TCP作为运输层协议，工作在80端口，通过安全套接字(socket)访问tcp，采用明文传输。性能好但安全性差。
 
-  HTTPs: HTTP over SSL, 在TCP之上使用传输层安全协议TLS来完成身份认证，安全传输，数据完整性校验，工作在443端口，采用密文传输。性能下降但安全性好。
+  HTTPs: HTTP over SSL, 在TCP之上使用传输层安全协议TLS来完成**身份认证，安全传输，数据完整性校验**，工作在443端口，采用密文传输。性能下降但安全性好。
 
 * **HTTPS 的加密方式**
 
@@ -617,7 +621,7 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
 
       > UDP 简单不可靠的传输层协议，udp数据报之间时无需的，也没有依赖关系。
 
-    * QUIC集成了TCP的连接管理，拥塞窗口和流量控制的网络特性，使得传输变得可靠，不必担心丢包。
+    * QUIC集成了TCP的**连接管理**，**拥塞窗口**和流量**控制**的网络特性，使得传输变得可靠，不必担心丢包。
 
     * 集成了TLS 1.3协议，使得传输变得安全。
 
@@ -635,7 +639,7 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
 
       ![image-20211125215744528](images/image-20211125215744528.png)
 
-    * **连接迁移**：QUIC没有使用四元组来绑定连接，而是使用连接ID，握手的作用就是确认连接id。
+    * **连接迁移**：QUIC没有使用四元组来绑定连接，而是使用**连接ID**，握手的作用就是**确认连接id**。
 
       客户端和服务器可以各自选择一组ID来标记自己，网络切换之后，只要连接id和TLS密钥等上下文信息一样，就可以无缝复用连接，不会产生卡顿感，实现了连接迁移。
 
@@ -1123,7 +1127,7 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
   * 从HTTP报文的链路来看
 
     1. 主机上的浏览器发起
-    2. 交换机
+    2. 交换机  NAT 转换
     3. 路由器
     4. 负载均衡LB
     5. 网关
@@ -1134,7 +1138,46 @@ SSL (Secure Socket Layer) 安全套接层，TLS(Transport Layer Security Protoco
     浏览器根据回应开始显示页面，先将html解析成**DOM树**，然后解析CSS文件成**渲染树**，之后开始布局并将渲染树绘制到屏幕中。
     
     
-
+    
+    https://cloud.tencent.com/developer/article/1793846
+  
+  * 数据传输的角度，基于5层模型
+  
+    * 应用层：
+  
+      * 浏览器解析URL，封装HTTP请求
+      * DNS解析域名获取目标服务器的IP地址
+  
+    * 传输层：
+  
+      * 建立TCP连接，进行TLS握手
+      * 将应用层报文基于字节流封装成报文段，加上包含5元组等信息的TCPheader，交给下层
+  
+    * 网络层
+  
+      * 将TCP报文段加上包含原地址，目标地址等信息的IP协议头，交给下层
+      * 利用ARP协议根据ip地址获取MAC地址
+  
+    * 数据链路层
+  
+      * 在IP分组上添加包含MAC地址的帧首部，和校验用的帧尾部FCS
+  
+    * 物理层
+  
+      * 将帧转化为比特流送到调制解调器，将数字信号转化为模拟信号，在物理媒体上传输
+  
+      经过路由器的转发到达服务器
+  
+      服务器一层层解析，最终将HTTP请求报文交给进程
+  
+      进程响应后已相同的方式返回给浏览器
+  
+      浏览器收到响应后解析渲染界面。
+  
+      完成请求后，TCP断开连接。
+  
+  
+  
   
 
 
@@ -1190,7 +1233,7 @@ TCP 缓冲区 和变量
 ---
 
 [^1]:[RFC 8132](https://www.rfc-editor.org/rfc/rfc8132.html)有提到GET和POST的一些不同点, 还有一个[误区](https://zhuanlan.zhihu.com/p/25028045)是将POST 请求发送时分成两个packet的问题，这仅仅是利用了Expect 请求头和100 continue响应码的关系，不同浏览器和服务器的实现不一样导致的。
-[^2]:CSQF(Corss-site request forgery) 跨站请求伪造，利用服务器对浏览器的信任，在已信任的网页中嵌入脚本，比如 <img src="http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman">，一旦点击，服务器认为就是用户的意图。XSS (Cross-site scrpt) 跨站脚本，属于代码注入，利用了浏览器对服务器的信任。比如将一段`<script>alert(“hey!you are attacked”)</script>`植入网页中，比如评论，当别人流浪到这个评论时，浏览器加载之后就会触发，改变里面的js代码就可以获取到你的cookie等信息。
+[^2]:CSRF(Corss-site request forgery) 跨站请求伪造，利用服务器对浏览器的信任，在已信任的网页中嵌入脚本，比如 <img src="http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman">，一旦点击，服务器认为就是用户的意图。XSS (Cross-site scrpt) 跨站脚本，属于代码注入，利用了浏览器对服务器的信任。比如将一段`<script>alert(“hey!you are attacked”)</script>`植入网页中，比如评论，当别人流浪到这个评论时，浏览器加载之后就会触发，改变里面的js代码就可以获取到你的cookie等信息。
 ```
 
 ```

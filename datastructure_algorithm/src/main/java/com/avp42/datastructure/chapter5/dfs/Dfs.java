@@ -24,6 +24,11 @@ public class Dfs {
         List<Integer> buffer2 = new ArrayList<>();
         obj.dfs2(0, arr, ans2, buffer2);
         System.out.println(ans2);
+        System.out.println("-------------子序列2-----------");
+        List<List<Integer>> ans2_2 = new ArrayList<>();
+        List<Integer> buffer2_2 = new ArrayList<>();
+        obj.dfs2_1(0, arr, ans2_2, buffer2_2);
+        System.out.println(buffer2_2);
         System.out.println("-------------子串-----------");
         List<List<Integer>> ans3 = new ArrayList<>();
         List<Integer> buffer3 = new ArrayList<>();
@@ -50,12 +55,20 @@ public class Dfs {
 
     public void dfs2(int i, int[] arr, List<List<Integer>> list, List<Integer> buffer){
         list.add(new ArrayList<>(buffer));
-        if(i == arr.length) return;
         for(int j = i; j <arr.length; j ++){
             buffer.add(arr[i]);
             dfs2(j + 1, arr, list, buffer);
             buffer.remove(buffer.size() - 1);
         }
+    }
+
+    public void dfs2_1(int i, int[] arr, List<List<Integer>> list, List<Integer> buffer){
+
+        if(i == arr.length)
+        buffer.add(arr[i]);
+        dfs2(i+1, arr, list, buffer);
+        buffer.remove(buffer.size() - 1);
+        dfs2(i+1, arr, list, buffer);
     }
 
 

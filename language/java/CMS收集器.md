@@ -35,7 +35,7 @@ JDK8中划分如下
 
 ![img](images/132ba6ba720f2bfc6c69b1ce490f7c87693987.jpg)
 
-GC主要工作在Heap区和MetaSapce区，在Direct Memory中，如果使用的是DirectByteBuffer，则在分配内存不足时这时GC通过Cleaner#clean简介管理
+GC主要工作在Heap区和MetaSapce区，在Direct Memory中，如果使用的是DirectByteBuffer，则在分配内存不足时这时GC通过Cleaner#clean间接管理
 
 > 这里与《深入理解java虚拟机》说的不一样，这里的应该是对的。
 
@@ -395,7 +395,7 @@ bool CMSCollector::shouldConcurrentCollect() {
 
 如何判断GC是故障的原因还是故障的结果或者表象呢？
 
-通常一个RT上涨故障会表现为GC耗时增大，线程block增多，慢查询增多，cpu负载高四个表象。
+通常一个RT上涨故障会表现为GC耗时增大，线程block增多，慢查询增多，cpu负载（使用率？）高四个表象。
 
 如何判断哪个是根因呢？以下方法论可以借鉴：
 
