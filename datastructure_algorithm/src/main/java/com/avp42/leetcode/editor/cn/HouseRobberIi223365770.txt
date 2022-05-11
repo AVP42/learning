@@ -1,0 +1,58 @@
+class Solution {
+    public int rob(int[] nums) {
+        // final
+        return rob_e1(nums);
+    }
+
+    // 分析：环形对此问题的影响是偷了第一家，就不能偷最后一家，反之亦然
+    // 因此我们可以分情况讨论，偷第一家的情况，这样，可偷的范围时[0,n-2]；不偷第一家，可偷的范围时[1,n-1];
+    // 就这样，将环形排列的问题转成单排列的问题
+    int rob1(int[] nums){
+        int n = nums.length;
+        if(n == 1) return nums[0];
+        if(n == 2) return Math.max(nums[0],nums[1]);
+        return Math.max(robRange(nums, 0, n-2), robRange(nums, 1, n-1));
+    }
+
+    int robRange(int[] nums, int l, int r){
+        int first = nums[l], second = Math.max(nums[l], nums[l + 1]);
+        for(int i = l + 2; i <= r; i ++){
+            int temp = second;
+            second = Math.max(second, first + nums[i]);
+            first = temp;
+        }
+        return second;
+    }
+
+
+
+    // 以下是重复练习
+    // 环形，无非就是首尾不能同时偷，那就分情况讨论
+    int rob_e1(int[] nums){
+        // dp[i][0] 第i个房子不偷  dp[i][1] 第i个房子偷
+        // dp[i][0] = max{dp[i-1][0], dp[i-1][1]}
+        // dp[i][1] = max{dp[i-1][0] + nums[i]}
+
+        // dp[i] 表示前i个房子的最大收益
+        // dp[i] = max{dp[i-1], dp[i-2] + nums[i]}
+        if(nums.length == 1) return nums[0];
+        if(nums.length == 2) return Math.max(nums[0],nums[1]);
+        int max1 = robRange_e1(nums, 0, nums.length - 2);
+        int max2 = robRange_e1(nums, 1, nums.length - 1);
+        return Math.max(max1, max2);
+    }
+
+    int robRange_e1(int[] nums, int l, int r){
+        int a = nums[l], b = Math.max(nums[l], nums[l + 1]);
+        for(int i = l + 2; i <= r; i ++){
+            int temp = b;
+            b = Math.max(b, a + nums[i]);
+            a = temp;
+        }
+        return Math.max(a, b);
+    }
+
+
+}
+//runtime:0 ms
+//memory:35.6 MB

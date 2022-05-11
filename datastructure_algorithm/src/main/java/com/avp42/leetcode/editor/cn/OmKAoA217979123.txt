@@ -1,0 +1,34 @@
+class Solution {
+    public int minCut(String s) {
+        return minCut1(s);    
+    }
+
+    // 动态规划1：一维
+    // 状态定义  dp[i] 前i个元素之间的最少回文个数
+    // dp[i] = min{0<=j<i && [j, i-1] 是回文 | dp[j] + 1}
+    // 这种做法每次都要往前去查找，复杂度为O(n*n)
+    int minCut1(String s){
+        int n = s.length();
+        int[] dp = new int[n + 1];
+        dp[0] = 0;
+        for(int i = 1; i <= n; i ++){
+            dp[i] = i;
+            for(int j = 0; j < i; j ++){
+                if(isPalindrome(s, j, i - 1)){
+                    dp[i] = Math.min(dp[i], dp[j] + 1);
+                }
+            }
+        }
+        return dp[n] -1;
+    }
+
+    boolean isPalindrome(String s, int l, int r){
+        while(l < r){
+            if(s.charAt(l) != s.charAt(r)) return false;
+            l ++; r--;
+        }
+        return true;
+    }
+}
+//runtime:996 ms
+//memory:36.2 MB
