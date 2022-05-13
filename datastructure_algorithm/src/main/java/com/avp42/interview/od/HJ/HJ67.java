@@ -18,7 +18,6 @@ public class HJ67 {
             for (int i = 0; i < 4; i++) {
                 nums[i] = in.nextInt();
             }
-            System.out.println(helper(nums, 0, ret, ));
         }
     }
 }
