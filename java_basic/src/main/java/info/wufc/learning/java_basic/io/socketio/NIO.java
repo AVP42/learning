@@ -33,10 +33,7 @@ public class NIO {
                     iterator.remove();
                     handle(key);
                 }
-
             }
-
-
         }
 
         private static void handle(SelectionKey key) throws IOException {
@@ -45,7 +42,7 @@ public class NIO {
                 System.out.println("有客户端连接事件发生了");
                 ServerSocketChannel ssc = (ServerSocketChannel) key.channel();
                 // accept 也是阻塞的
-                SocketChannel accepted = ssc.accept();
+                SocketChannel accepted = ssc.accept ();
                 // 设置客户端的channel为非阻塞
                 accepted.configureBlocking(false);
                 // 对read事件感兴趣
@@ -91,23 +88,30 @@ public class NIO {
                 while(it.hasNext()){
                     SelectionKey key = it.next();
                     it.remove();
-                    if(key.isConnectable()){
-                        SocketChannel channel = (SocketChannel) key.channel();
-                        if(channel.isConnectionPending()){
-                            channel.finishConnect();
-                        }
-                        channel.configureBlocking(false);
-                        ByteBuffer bufferToWrite = ByteBuffer.wrap("helloserver".getBytes(StandardCharsets.UTF_8));
-                        channel.write(bufferToWrite);
-                        channel.register(selector, SelectionKey.OP_READ);
-                    }else if(key.isReadable()){
-                        SocketChannel channel = (SocketChannel) key.channel();
-                        ByteBuffer buffer = ByteBuffer.allocate(1024);
-                        int len = channel.read(buffer);
-                        if(len != -1){
-                            System.out.println("客户端接受到信息：" + new String(buffer.array()));
-                        }
-                    }
+                    handle(selector, key);
+                }
+            }
+        }
+
+        private static void handle(Selector selector, SelectionKey key) throws IOException {
+            // 连接established建立之后，是connectable状态
+            if(key.isConnectable()){
+                SocketChannel channel = (SocketChannel) key.channel();
+                // channel没有没有complete 连接流程
+                if(channel.isConnectionPending()){
+                    // 在非阻塞模式下，如果已经建立了连接，返回true，否则返回false，且不会阻塞
+                    // 需要调用channel.finishConnect()来完成连接流程，之后才能读写，详见该方法的文档
+                    channel.finishConnect();
+                }
+                ByteBuffer bufferToWrite = ByteBuffer.wrap("helloserver".getBytes(StandardCharsets.UTF_8));
+                channel.write(bufferToWrite);
+                channel.register(selector, SelectionKey.OP_READ);
+            }else if(key.isReadable()){
+                SocketChannel channel = (SocketChannel) key.channel();
+                ByteBuffer buffer = ByteBuffer.allocate(1024);
+                int len = channel.read(buffer);
+                if(len != -1){
+                    System.out.println("客户端接受到信息：" + new String(buffer.array()));
                 }
             }
         }

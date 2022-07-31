@@ -5,31 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ccd11ba-7952-42ba-a3cb-b9a4b89f7ea6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/acm/BuildTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/Stream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/booleansize/BooleanSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/swap/temp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/od/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/od/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/od/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketio/BIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketio/NIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/zerocopy/Channel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter5/binary_algorithm/BinarySearch3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ35.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ43.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ50.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ51.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ52.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ61.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ67.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ69.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ70.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/HJ83.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/practise/huawei/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/collection/HashMapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/filechannel/FileChannelDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketchannel/SocketChannelDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/lambda/LambdaDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/resources/filechannel_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/main/resources/filechannel_output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/System/ScannerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/basic/System/ScannerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/summary/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/_7_quick_sort/summary/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter5/dfs/Dfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/datastructure/chapter5/dfs/Dfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/java/CMS收集器.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/CMS收集器.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/java/JUC/并发编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/JUC/并发编程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketio/NIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketio/NIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/java/jvm总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/language/java/jvm总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartIII_传输层.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartIII_传输层.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartII_应用层.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartII_应用层.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartVII_网络安全.md" beforeDir="false" afterPath="$PROJECT_DIR$/计算机基础/计算机网络/summary/PartVII_网络安全.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,8 @@
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/datastructure_algorithm/src/main/java/com/avp42/interview/execise" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/B" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -103,6 +102,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learning\0_github\java_basic\src\main\resources" />
       <recent name="D:\learning\0_github\datastructure_algorithm\src\main\java\com\avp42\interview\execise" />
       <recent name="D:\learning\0_github\datastructure_algorithm\src\main\java\com\avp42\interview\od" />
     </key>
@@ -110,16 +110,17 @@
       <recent name="D:\learning\0_github\language\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.avp42.datastructure.chapter5.binary_algorithm" />
       <recent name="info.wufc.learning.java_basic.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main3">
-    <configuration name="BooleanSize$Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.basic.booleansize.BooleanSize$Test" />
-      <module name="datastructure_algorithm" />
+  <component name="RunManager" selected="Application.HashMapDemo">
+    <configuration name="HashMapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.collection.HashMapDemo" />
+      <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.basic.booleansize.*" />
+          <option name="PATTERN" value="info.wufc.learning.java_basic.collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuildTree$Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.acm.BuildTree$Method" />
-      <module name="datastructure_algorithm" />
+    <configuration name="NIO$Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.io.socketio.NIO$Client" />
+      <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.acm.*" />
+          <option name="PATTERN" value="info.wufc.learning.java_basic.io.socketio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.interview.execise.Main1" />
-      <module name="datastructure_algorithm" />
+    <configuration name="NIO$Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.io.socketio.NIO$Server" />
+      <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.interview.execise.*" />
+          <option name="PATTERN" value="info.wufc.learning.java_basic.io.socketio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.interview.execise.Main2" />
-      <module name="datastructure_algorithm" />
+    <configuration name="SocketChannelDemo$NIOClient2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.io.socketchannel.SocketChannelDemo$NIOClient2" />
+      <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.interview.execise.*" />
+          <option name="PATTERN" value="info.wufc.learning.java_basic.io.socketchannel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.avp42.interview.execise.Main3" />
-      <module name="datastructure_algorithm" />
+    <configuration name="SocketChannelDemo$NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="info.wufc.learning.java_basic.io.socketchannel.SocketChannelDemo$NIOServer" />
+      <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.avp42.interview.execise.*" />
+          <option name="PATTERN" value="info.wufc.learning.java_basic.io.socketchannel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main3" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main1" />
-        <item itemvalue="Application.BooleanSize$Test" />
-        <item itemvalue="Application.BuildTree$Method" />
+        <item itemvalue="Application.HashMapDemo" />
+        <item itemvalue="Application.SocketChannelDemo$NIOClient2" />
+        <item itemvalue="Application.SocketChannelDemo$NIOServer" />
+        <item itemvalue="Application.NIO$Client" />
+        <item itemvalue="Application.NIO$Server" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +241,29 @@
       <workItem from="1651976585458" duration="5987000" />
       <workItem from="1652095005087" duration="2051000" />
       <workItem from="1652196764103" duration="1074000" />
+      <workItem from="1652267773123" duration="640000" />
+      <workItem from="1652268542849" duration="9443000" />
+      <workItem from="1652440336492" duration="4873000" />
+      <workItem from="1652448929751" duration="2480000" />
+      <workItem from="1652491005654" duration="2890000" />
+      <workItem from="1652577740588" duration="2553000" />
+      <workItem from="1652884691194" duration="1464000" />
+      <workItem from="1652954164843" duration="591000" />
+      <workItem from="1653142599777" duration="1539000" />
+      <workItem from="1653219641647" duration="2134000" />
+      <workItem from="1653403599016" duration="1284000" />
+      <workItem from="1653453471413" duration="596000" />
+      <workItem from="1653461722402" duration="599000" />
+      <workItem from="1653824957723" duration="597000" />
+      <workItem from="1654246831520" duration="1039000" />
+      <workItem from="1654326683707" duration="21121000" />
+      <workItem from="1654398050436" duration="4892000" />
+      <workItem from="1654479667998" duration="1940000" />
+      <workItem from="1654746257614" duration="1235000" />
+      <workItem from="1654826015351" duration="591000" />
+      <workItem from="1658673521776" duration="1182000" />
+      <workItem from="1658843730479" duration="3987000" />
+      <workItem from="1658936639542" duration="658000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1647346669896</created>
@@ -282,6 +306,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -303,6 +338,36 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/io/socketchannel/SocketChannelDemo.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../soft_program/jdk-8u181/src.zip!/java/util/HashMap.java</url>
+          <line>643</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_basic/src/main/java/info/wufc/learning/java_basic/collection/HashMapDemo.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../soft_program/jdk-8u181/src.zip!/java/util/HashMap.java</url>
+          <line>1956</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
